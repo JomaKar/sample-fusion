@@ -1,0 +1,94 @@
+body .gradient,
+body .gradient p,
+body .gradient.fullGradient,
+body .gradient-bg.fullGradient,
+.fullGradient,
+.radioWithQuestionWrapper{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+label.gradient,
+label.gradient.fullGradient,
+label.fullGradient,
+label.gradient-bg.fullGradient,
+label.gradient-bg,
+label.standardTitle,
+.gradient label,
+.gradient.fullGradient label,
+.gradient-bg.fullGradient label,
+input:focus+label.gradient,
+input:focus+label.gradient.fullGradient,
+input:focus+label.fullGradient,
+input:focus+label.gradient-bg.fullGradient,
+input:focus+label.gradient-bg,
+input:focus+label.standardTitle,
+input:focus+.gradient label,
+input:focus+.gradient.fullGradient label,
+input:focus+.gradient-bg.fullGradient label{
+	filter: none !important;
+	background-image: none !important;
+	color: #DB0011 !important;
+}
+
+.titleTxt,
+p.titleTxt.fullGradient,
+body .gradient p.titleTxt.fullGradient,
+body .gradient.fullGradient.benefitsBtn,
+body .gradient-bg.fullGradient.benefitsBtn,
+.otherServiceConectorDiv .oneSideWrapper p.p16px,
+.lastStep .step-content .row .step-title-h p,
+.longFormStep .step-content .longFormWrapper .step-title-h p{
+	color: #DB0011 !important;
+}
+
+label.visibleLabel{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+input:focus+label{
+	color: #1b1b1b !important;
+}
+
+
+.progressBar{
+	background-color: #db0011;
+}
+
+.stepper.withBlock{
+	display: block !important;
+	margin-top: 0 !important;
+}
+
+#approvedCredit{
+	margin-top: 0px !important;
+}
+
+.giroSelectWrapper .arrow{
+	filter: none;
+	opacity: 1;
+	top: -8px;
+	height: 30px;
+	width: 30px;
+}
+
+.moreBenefitsBtn img{
+	display: inline-block;
+}
+
+.longFormStep.active, .lastStep.active{
+	margin-top: 0px !important;
+}
+
+.membershipsStep.active{
+	margin-top: 40px !important;	
+}
+
+@media(min-width: 600px){
+	.longFormStep.active, .lastStep.active{
+		margin-top: 30px !important;
+	}
+}

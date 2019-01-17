@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+      <meta property="og:url"                content="https://personal.hsbc.com.mx/fusion/" />
+      <meta property="og:type"               content="website" />
+      <meta property="og:title"              content="HSBC Fusion, mi negocio y finanzas personales en un mismo lugar" />
+      <meta property="og:description"        content="Yo administro mis finanzas personales y las de mi negocio en un mismo lugar con #HSBCFusion. Tú también empieza a ahorrar tiempo y dinero, visita  www.hsbc.com.mx/fusion" />
+      <meta property="og:image"              content="http://localhost:3000/assets/imgs/shareImg.png" />
+
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>HSBC Online</title>
+      <meta name="description" content="Plataforma online de HSBC para tus necesidades">
+
+
+      <link rel="stylesheet" class="conditional">
+
+      <!-- Materializecss compiled and minified CSS -->
+      <link rel="stylesheet" href="css/materialize.min.css">
+      <!--Import Materialize-Stepper CSS (after importing materialize.css) -->
+      <link rel="stylesheet" href="css/materialize-stepper.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+
+      <!--[if gt IE 8 ]>
+      <link rel="stylesheet" href="css/styles-ie.css">      
+      <![endif]-->
+
+      <!--[if lt IE 9 ]>
+      <link rel="stylesheet" href="css/styles-ie-8.css">      
+      <![endif]-->
+
+      <link rel="icon" type="image/png" href="assets/imgs/rojo.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body>
+      
+      <div class="splash">
+         <img src="assets/imgs/logo.png">
+         <p class="splashTxt">Simulador de cr&eacute;dito</p>
+      </div>
+
+      <header class="appGradientHeader">
+      </header>
+
+      <img class="brandIcon" src="assets/imgs/logoSmall.png">
+
+      <span class="floatingText">Simulador de Cr&eacute;dito</span>
+
+
+      <form id="creditForm">
+
+         <ul class="stepper linear">
+
+            <!-- preference name input -->
+            <li id="start" class="step small-step one-field-step withInput active" data-step-name="start">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="input-field col s12 gradient withArrBtn">
+                        <span class="placeholderFake"></span>
+                        <input id="u_name" name="u_name" type="text" class="validate" required data-pristine='1'>
+                        <label id="u_nameLabel" class="fullGradient standardTitle" for="u_name">¿Cu&aacute;l es tu nombre?</label>
+                     </div>
+                     <div class="step-actions">
+                        <button id="nameInputBtn" class="waves-effect waves-dark btn-flat next-step" tms-tab="">
+                           <img src="assets/imgs/arrow-right.svg" class="arrow-right">
+                        </button>
+                     </div>
+                  </div>
+                  
+               </div>
+            </li>
+
+            <!-- custom greeting -->
+            <li id="greeting" class="step small-step noInputItm automaticStep" data-animated="1200" data-step-name="greeting" tms-tab="">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="medium titleTxt welcomeTxt fullGradient">¡Hola, <strong><span class="userName tocapitalize"></span></strong>!</p>
+                  </div>
+               </div>
+            </li>
+
+            <!-- fusion intro short view -->
+            <li id="shortIntro" class="step small-step noInputItm automaticStep" data-animated="1300" data-step-name="shortIntro" tms-tab="">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="medium titleTxt welcomeTxt fullGradient"><strong>Esto es Fusion</strong></p>
+                  </div>
+               </div>
+            </li>
+
+            <!-- privileges icons -->
+            <li id="benefits" class="step small-step noInputItm" data-step-name="benefits">
+               <div class="step-content icons">
+                  <div class="gradient iconsWrapper">
+                     <div class="row iconsRow">
+                        <div class="iconCont toAnimate col s6 m3">
+                           <img src="assets/imgs/headIcon.svg" class="iconImg">
+                           <span class="iconText headTxt">
+                              Un solo Equipo Especializado en Sucursal
+                           </span>
+                        </div>
+                        <div class="iconCont toAnimate col s6 m3">
+                           <img src="assets/imgs/listenIcon.svg" class="iconImg">
+                           <span class="iconText listenTxt">
+                              Un solo Tel&eacute;fono de Contacto
+                           </span>
+                        </div>
+                        <div class="iconCont toAnimate col s6 m3">
+                           <img src="assets/imgs/computerIcon.svg" class="iconImg">
+                           <span class="iconText computerTxt">
+                              Una sola Banca Electr&oacute;nica
+                           </span>
+                        </div>
+                        <div class="iconCont toAnimate col s6 m3">
+                           <img src="assets/imgs/infiniteIcon.svg" class="iconImg">
+                           <span class="iconText infiniteTxt">
+                              Una cuota por 2 cuentas: personal y negocios
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="step-actions iconsBtnCont toAnimate">
+                     <span class="benefitsBtn gradient-bg fullGradient next-step" tms-tab="">
+                        Continuar <span class="caret"></span>
+                     </span>
+                  </div>
+               </div>
+            </li>
+            
+            <!-- fusion long intro -->
+            <li id="presentation" class="step noInputItm" data-step-name="presentation">
+               <div class="step-content welcomeContent">
+                  <div class="step-header">
+                     <p class="titleTxt bigFont"><span>HSBC Fusion</span></p>
+                  </div>
+                  <div class="gradient">
+                     <p class="fullGradient forceDouble customTxt mt16">El nuevo servicio financiero para tu negocio y tu vida personal.</p>
+                  </div>
+                  <div class="step-actions">
+                     <button class="lonelyBtn waves-effect waves-dark btn-flat add-border tonone next-step" tms-tab="">Simula tu cr&eacute;dito</button>
+                  </div>
+               </div>
+            </li>
+            
+            <!-- how much credit input -->
+            <li id="creditAsk" data-step-bar="1" class="step small-step onProgressBar one-field-step withInput" data-step-name="creditAsk">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="input-field col s12 gradient withArrBtn">
+                        <span class="dollaIcon">$</span>
+                        <input id="u_credit" name="u_credit" type="number" class="validate trickyInput" required>
+                        <label for="u_credit" class="doubleLine fullGradient standardTitle">
+                           ¿Cu&aacute;nto cr&eacute;dito necesitas?
+                           <br>
+                           <span class="lightSpan fullGradient">
+                              (en pesos)
+                           </span>
+                        </label>
+                     </div>
+                     <div class="step-actions">
+                        <button id="creditNumberBtn" class="waves-effect waves-dark btn-flat next-step" tms-tab="">
+                           <img src="assets/imgs/arrow-right.svg" class="arrow-right">
+                        </button>
+                     </div>
+                  </div>
+                  
+               </div>
+            </li>
+
+            <!-- credity use type -->
+            <li id="creditUse" data-step-bar="2" class="step small-step withInput radioInput onProgressBar" data-step-name="creditUse">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿En qu&eacute; usar&aacute;s tu cr&eacute;dito?</span></p>
+
+                     <p>
+                        <input class="with-gap creditUse" required name="creditUse" type="radio" id="fOptionCreditUse" value="1" />
+                        <label class="visibleLabel" for="fOptionCreditUse" tms-tab="">Activo fijo</label>
+                      </p>
+                      <p>
+                        <input class="with-gap creditUse" required name="creditUse" type="radio" id="sOptionCreditUse" value="2" />
+                        <label class="visibleLabel" for="sOptionCreditUse" tms-tab="">Capital de trabajo</label>
+                      </p>
+
+                  </div>
+               </div>
+            </li>
+            
+            <!-- credit type selection -->
+            <li id="creditType" data-step-bar="3" class="step small-step withInput radioInput onProgressBar" data-step-name="creditType">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿Qu&eacute; cr&eacute;dito prefieres?</span></p>
+
+                     <p class="radioWithQuestionWrapper">
+                        <input class="with-gap revCredType" required name="creditType" type="radio" id="revCredType" value="1" />
+                        <label class="visibleLabel" for="revCredType" tms-tab="">
+                           Revolvente 
+                        </label>
+                        <span class="questionIcon">
+                           <img src="assets/imgs/info.svg" class="iconSVGImg">
+                        </span> 
+                        <span class="helpText">Reutiliza tu cr&eacute;dito disponible sin un plazo fijo</span>
+                      </p>
+                      <p class="radioWithQuestionWrapper">
+                        <input class="with-gap simpleCredType" required name="creditType" type="radio" id="simpleCredType" value="2" />
+                        <label class="visibleLabel" for="simpleCredType" tms-tab="">
+                           Simple 
+                        </label>
+                        <span class="questionIcon">
+                           <img src="assets/imgs/info.svg" class="iconSVGImg">
+                        </span>
+                        <span class="helpText second">Paga a plazos fijos</span>
+                      </p>
+                  </div>
+               </div>
+            </li>
+            
+            <!-- simple credit payment months selection -->
+            <li id="monthsToPay" data-step-bar="4" class="step small-step withInput radioInput onProgressBar" data-step-name="monthsToPay">
+               <div class="step-content">
+                  <div class="gradient desiredPaymentWrapper">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿En cu&aacute;nto tiempo deseas pagarlo?</span></p>
+
+                     <p>
+                        <input class="with-gap desiredPaymentInput" name="paymentPeriod" type="radio" id="fOptionMonths" value="1" />
+                        <label class="visibleLabel" for="fOptionMonths" tms-tab="">36 Meses</label>
+                      </p>
+                      <p>
+                        <input class="with-gap desiredPaymentInput" name="paymentPeriod" type="radio" id="sOptionMonths" value="2" />
+                        <label class="visibleLabel" for="sOptionMonths" tms-tab="">48 Meses</label>
+                      </p>
+
+                      <p>
+                        <input class="with-gap desiredPaymentInput" name="paymentPeriod" type="radio" id="tOptionMonths" value="3" />
+                        <label class="visibleLabel" for="tOptionMonths" tms-tab="">60 Meses</label>
+                      </p>
+
+                  </div>
+               </div>
+            </li>
+            
+            <!-- fiscal regiment selection -->
+            <li id="taxRegimen" data-step-bar="5" class="step small-step withInput radioInput onProgressBar" data-step-name="taxRegimen">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿Cu&aacute;l es tu r&eacute;gimen fiscal?</span></p>
+
+                      <p>
+                        <input class="with-gap" required name="taxesRegimen" type="radio" id="sOptionPersonType" value="1" />
+                        <label class="visibleLabel" for="sOptionPersonType" tms-tab="">Persona f&iacute;sica con actividad empresarial</label>
+                      </p>
+
+                      <p>
+                        <input class="with-gap" required name="taxesRegimen" type="radio" id="tOptionPersonType" value="2" />
+                        <label class="visibleLabel" for="tOptionPersonType" tms-tab="">Persona moral</label>
+                      </p>
+
+                  </div>
+               </div>
+            </li>
+            
+            <!-- annual sells input -->
+            <li id="annualSells" data-step-bar="6" class="step small-step one-field-step withInput onProgressBar" data-step-name="annualSells">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="input-field col s12 gradient withArrBtn">
+                        <span class="dollaIcon">$</span>
+                        <input id="u_sells" name="u_sells" type="number" class="validate trickyInput" required>
+                        <label for="u_sells" class="doubleLine fullGradient standardTitle">
+                           ¿Cu&aacute;nto has vendido en el &uacute;ltimo año?
+                           <span class="lightSpan fullGradient">
+                              (en pesos)
+                           </span>
+                        </label>
+                     </div>
+                     <div class="step-actions">
+                        <button id="sellsNumberBtn" class="waves-effect waves-dark btn-flat next-step" tms-tab="">
+                           <img src="assets/imgs/arrow-right.svg" class="arrow-right">
+                        </button>
+                     </div>
+                  </div>
+                  
+               </div>
+            </li>
+
+            
+            <!-- debt monthly payment input -->
+            <li id="debtPayment" data-step-bar="7" class="step small-step one-field-step withInput onProgressBar" data-step-name="debtPayment">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="input-field col s12 gradient withArrBtn">
+                        <span class="dollaIcon">$</span>
+                        <input id="u_debtPayment" name="u_debtPayment" type="number" class="validate trickyInput" required>
+                        <label for="u_debtPayment" class="tripleLine fullGradient standardTitle">
+                           ¿Cu&aacute;l es tu pago mensual de obligaciones crediticias?
+
+                           <span class="lightSpan fullGradient">
+                              (en pesos)
+                           </span>
+                        </label>
+                     </div>
+                     <div class="step-actions">
+                        <button id="debtPayNumberBtn" class="waves-effect waves-dark btn-flat next-step" tms-tab="">
+                           <img src="assets/imgs/arrow-right.svg" class="arrow-right">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </li>
+
+            
+            <!-- calculation delay view -->
+            <li id="calculationTime" data-step-bar="8" data-ready="no" class="step small-step calculationDelayView noInputItm automaticStep" data-step-name="calculationTime">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>Estamos calculando...</span></p>
+                  </div>
+                  <p>danos un momento para obtener la simulaci&oacute;n de tu cr&eacute;dito.</p>
+               </div>
+            </li>
+
+            
+            <!-- showed "approved" credit -->
+            <li id="approvedCredit" data-step-bar="noMore" class="step small-step noInputItm" data-step-name="approvedCredit" >
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient creditResultTitle"><strong>¡Buenas noticias, <span class="userName tocapitalize"></span></strong>!</p>
+                  </div>
+                  <p class="creditResSubtitle">El monto de tu cr&eacute;dito puede ser hasta de:</p>
+                  <p class="amount" data-amount=""></p>
+                  <p class="paymentData"></p>
+                  <div class="step-actions">
+                     <button id="creditApprovedNextStepBtn" class="waves-effect lonelyBtn waves-dark btn-flat next-step add-border tonone" tms-tab="">Continuar</button>
+                  </div>
+                  <p class="simulationAgain" tms-tab=""> Simular otro cr&eacute;dito <img src="assets/imgs/chevron-right.svg" class="iconSVGImg"> </p>
+                  <small class="moneySimulatorResultSmallText">
+                     Sujeto a aprobaci&oacute;n de cr&eacute;dito. El simulador de cr&eacute;dito realiza un c&aacute;lculo aproximado del monto que puedes obtener.
+                     <br>
+                     <br>
+                     <div class="catDiv">CAT <span class="creditTypeCat">Cr&eacute;dito Simple HSBC Fusion</span> <span class="catSpan">19%</span>, sin IVA. Informativo.
+                     <br>
+                     <br>
+                     Vigencia al 8 de julio de 2018. Fecha de c&aacute;lculo 8 de enero de 2018.
+                     <br>
+                     <br>
+                     Consulta requisitos, t&eacute;rminos, condiciones de contrataci&oacute;n y comisiones en <a href="http://www.hsbc.com.mx/fusion" target="_blank" class="termsLink">www.hsbc.com.mx/fusion</a>
+                     </div>
+                  </small>
+               </div>
+            </li>
+            
+            <!-- long form -->
+            <li id="form" class="step longFormStep" data-step-name="form">
+               <div class="step-content">
+                  <div class="row longFormWrapper" data-place="credits">
+                     <div class="step-title-h gradient">
+                        <p class="fullGradient semiStrongWords">Solicitud de contacto</p>
+                     </div>
+
+                     <div class="col s12 noPL noMB">
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_rs" name="u_rs" type="text" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_rs">Raz&oacute;n Social o nombre de tu empresa</label>
+                        </div>
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_fullname" name="u_fullname" type="text" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_fullname">Representante legal o nombre del contacto</label>
+                        </div>
+
+                     </div>
+
+                     <div class="col s12 noPL noMB">
+
+                        <div class="input-field noPL col s12 giroSelectWrapper m6 formRightPadding">
+                           <span class="arrow"></span>
+                           <select id="u_giro" name="u_giro" class="longFormInput giroSelect">
+                              <option value="" disabled="" selected="">Escoge una opci&oacute;n</option>
+                              <option value="1">Servicios</option>
+                              <option value="2">Comercio</option>
+                              <option value="3">Manufactura</option>
+                              <option value="4">Gobierno</option>
+                              <option value="5">Agropecuario</option>
+                              <option value="6">Finanzas</option>
+                           </select>
+                           <label class="shortLabel active" for="u_giro">Giro de tu negocio</label>
+                        </div>
+
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_n_employees" name="u_n_employees" type="number" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_n_employees">No. de empleados en tu negocio</label>
+                        </div>
+
+                     </div>
+
+                     <div class="col s12 noPL noMB">
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_email" name="u_email" type="email" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_email">Correo electr&oacute;nico</label>
+                        </div>
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_email_c" name="u_email_c" data-correct="no" data-check="sameEmail" type="email" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_email_c">Confirmar correo electr&oacute;nico</label>
+                           <span class="errMsg">Tu email no coincide</span>
+                        </div>
+
+                     </div>
+
+                     <div class="col s12 noPL noMB">
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_phone" name="u_phone" data-correct="no" data-check="length10" type="number" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_phone">Tel&eacute;fono celular (10 d&iacute;gitos)</label>
+                           <span class="errMsg">Deben ser 10 d&iacute;gitos</span>
+                        </div>
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_phone_2" data-correct="no" data-check="length10" name="u_phone_2" type="number" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_phone_2">Tel&eacute;fono fijo (10 d&iacute;gitos)</label>
+                           <span class="errMsg">Deben ser 10 d&iacute;gitos</span>
+                        </div>
+
+                     </div>
+
+                     <div class="col s12 noPL noMB">
+
+                        <div class="input-field noPL col s12 m6 formRightPadding">
+                           <input id="u_zipcode" name="u_zipcode" data-correct="no" data-check="zipCode" type="number" class="validate longFormInput" required>
+                           <label class="shortLabel" for="u_zipcode">C&oacute;digo Postal</label>
+                           <span class="errMsg">Ese c&oacute;digo no existe</span>
+                        </div>
+
+                     </div>
+
+
+                     <div class="col s12 m6 noPL checkboxLongFormDiv formRightPadding">
+                        <div class="checkboxWrapper">
+                           
+                           <div class="checkBoxCont">
+                              <input name="privacyPolicy" type="checkbox" id="cb_tc">
+                              <div class="checkboxImg" tms-tab=""></div>
+                           </div>
+
+                           <label class="checkboxLabel">He le&iacute;do y estoy de acuerdo con el 
+                              <span class="privacyPolicyLink" tms-tab="">Aviso de Privacidad</span>, por lo que autorizo el tratamiento de mis datos personales.
+                           </label>
+
+                        </div>
+                     </div>
+
+                     <div class="col s12 m6 noPL checkboxLongFormDiv formRightPadding">
+                        <div class="checkboxWrapper">
+                           <div class="checkBoxCont">
+                              <input name="acceptContact" type="checkbox" id="cb_hsbc">
+                              <div class="checkboxImg" tms-tab=""></div>
+                           </div>
+                           <label class="checkboxLabel">Deseo que HSBC me contacte para ofrecerme otras soluciones financieras.</label>
+                        </div>
+                     </div>
+
+
+                  </div>
+                  
+                  <div class="row privacyPolicyWrapper">
+                     
+                     <div class="col s12 privacyPolicy noPL">
+                        <span class="closePP" tms-tab="">
+                           <img src="assets/imgs/close.svg" class="iconSVGImg">
+                        </span>
+
+                        <p class="privacyPolicyTitle">
+                           Aviso de Privacidad
+                        </p>
+
+                        <div class="row">
+                           <div class="col s12 m6 noPL">
+                              <p>
+                                 HSBC M&eacute;xico, S.A., Instituci&oacute;n de Banca M&uacute;ltiple, Grupo Financiero HSBC, con domicilio en Paseo de la Reforma No.347, Col. Cuauht&eacute;moc, C.P. 06500, M&eacute;xico D.F, responsable del tratamiento de sus datos personales, con las finalidades de:
+                              </p>
+                              <p>
+                                 Desarrollo, an&aacute;lisis, comercializaci&oacute;n, asesor&iacute;a, promoci&oacute;n, contrataci&oacute;n, colocaci&oacute;n, identificaci&oacute;n de riesgo en la contrataci&oacute;n, diseño de productos y servicios financieros y las obligaciones derivadas de la relaci&oacute;n jur&iacute;dica entre el titular de datos personales y el Grupo HSBC M&eacute;xico y/o sus empresas afiliadas o subsidiarias. Asimismo se podr&aacute;n recabar datos personales sensibles.
+                              </p>
+                           </div>
+                           <div class="col s12 m6 noPL">
+                              <p>
+                                 Consulta nuestro aviso de privacidad integral en la direcci&oacute;n: <a href="http://www.hsbc.com.mx/fusion" class="termsLink" target="_blank">http://www.hsbc.com.mx</a> o en cualquier sucursal. 
+                              </p>
+                              <p>
+                                 Aviso de privacidad otros pa&iacute;ses: 
+                              </p>
+                              <p>
+                                 Es indispensable que la informaci&oacute;n que ingreses sea veraz para poder aplicar a la promoci&oacute;n, producto o servicio que aqu&iacute; se ofrece. Tu informaci&oacute;n est&aacute; protegida de acuerdo a nuestras pol&iacute;ticas de privacidad y no ser&aacute; utilizada para otros fines ni compartida a terceras personas o empresas.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="step-actions longFormAction">
+                     <button disabled class="lonelyBtn waves-effect waves-dark btn-flat next-step right add-border tonone formSubmitBtn" data-flux="credits" tms-tab="">Continuar</button>
+                  </div>
+               </div>
+            </li>
+
+            
+            <!-- folio number and end view -->
+            <li id="end" class="step lastStep" data-step-name="end">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="step-title-h gradient">
+                        <p class="fullGradient">¡Todo listo, <strong><span class="userName tocapitalize"></span></strong>!</p>
+                     </div>
+
+                     <div class="col s12 m6 noPL firstSideLastStep">
+                        <p class="approachTimeTxt">En menos de <strong>24 horas</strong> te llamaremos para dar seguimiento a tu solicitud con el siguiente folio:</p>
+
+                        <div class="folioWrapper">
+                           <div class="leftGradient"></div>
+                           <span class="folio">
+                              <strong class="folioCont">016 788 129 342</strong>
+                           </span>
+                        </div>
+
+                        <div class="col s12 success-actions">
+                           <div class="col s12 m6">
+                              <a href="" class="align-to-icon printBtn" tms-tab="">
+                                 <img src="assets/imgs/print.svg" class="iconSVGImg printIcon">
+                              Imprime tu folio</a>
+                           </div>
+                           <div class="col s12 m6 withFlex">
+                              <img src="assets/imgs/share.svg" class="iconSVGImg shareIcon">
+                              <a class="align-to-icon shareLink" tms-tab="">
+                                 Comparte en tus redes
+                              </a>
+                              <span class="shareOnNet-AFTER" style="display: none" data-social="L" tms-tab="">
+                                 <!-- <script type="in/Login"></script> -->
+                                 LinkedIn
+                              </span>
+                              <span class="shareOnNet" data-social="F" tms-tab="">
+                                 Facebook
+                              </span>
+                              <span class="shareOnNet" data-social="T" tms-tab="">
+                                 Twitter
+                              </span>
+                           </div>
+                        </div>
+
+                        <small>
+                           En breve recibirás un mail. Consulta requisitos, t&eacute;rminos, condiciones de contrataci&oacute;n y comisiones en: <a href="http://www.hsbc.com.mx/fusion" class="termsLink" target="_blank">http://www.hsbc.com.mx/fusion</a>
+                        </small>
+                     </div>
+
+                     <div class="col s12 m6 secondSideLastStep">
+                        <p class="requirementsTitle">Recuerda tener como m&iacute;nimo:</p>
+
+                        <ul class="ul-disc">
+                           <li>Identificaci&oacute;n oficial vigente de los accionistas y representante legal.</li>
+                           <li>Acta constitutiva.</li>
+                           <li>C&eacute;dula de Identificaci&oacute;n Fiscal.</li>
+                           <li>Comprobante de domicilio vigente de la empresa y de los accionistas.</li>
+                        </ul>
+
+                        <p class="callAction align-to-icon">
+                           <img src="assets/imgs/call.svg" class="iconSVGImg phoneIcon">
+                           Si tienes dudas ll&aacute;manos al 
+                           <strong>(55) 5234-9889</strong>
+                           <strong>Centro de Atenci&oacute;n HSBC Fusion</strong>
+                        </p>
+
+                        <a href="http://www.hsbc.com.mx/fusion" class="backFinalBtn termsLink align-to-icon" tms-tab="">
+                           <img src="assets/imgs/arrow-left.svg" class="iconSVGImg">
+                        Regresa a HSBC Fusion</a>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="otherServiceConectorDiv">
+                  <div class="fullWrapper">
+                     <div class="oneSideWrapper">
+                        <p class="gradient-bg fullGradient p16px">
+                           <strong>
+                              Fusiona. Ahorra. Simplifica.
+                           </strong>
+                        </p>
+                        <p class="text">
+                           Un pago al mes que incluye todo para tu negocio y tu vida personal.
+                        </p>
+                     </div>
+                     <div class="oneSideWrapper">
+                        <button class="lonelyBtn waves-effect waves-dark btn-flat otherServiceConnectorBtn toMemberships" tms-tab="">Elige tu membres&iacute;a</button>
+                     </div>
+                     <!--[if lt IE 10 ]>
+                     <div style="clear: both;"></div>
+                     <![endif]-->
+                  </div>
+               </div>
+            </li>
+
+            <!-- memberships intro -->
+            <li id="membershipsAfter" class="step membershipsStep" data-step-name="membershipsAfter">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="fullGradient titleTxt semiStrongWords">
+                        Una sola cuota por dos cuentas.
+                     </p>
+                  </div>
+
+                  <div class="membershipRow">
+
+                     <div class="membershipWrapper">
+                        <div class="membershipBox entMem">
+                           <p class="membershipTitle">
+                              Membres&iacute;a HSBC Fusion
+                              <br>
+                              Empresario
+                           </p>
+
+                           <p class="membershipSubtitle">
+                           </p>
+
+                           <ul class="iconsList">
+                              <li class="iconItm">
+                                 <p>Productos + servicios personales y de negocio</p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/icon-two-services.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p>Privilegios exclusivos HSBC Advance o HSBC Premier</p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/icon-advance.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                           </ul>
+
+                           <button class="moreBenefitsBtn" tms-tab="">
+                              M&aacute;s beneficios
+                              <img src="assets/imgs/chevron-right.svg" class="responsive-img">
+                           </button>
+
+                           <ul class="iconsList extraBenefits">
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Cuenta HSBC Advance o Cuenta Premier
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Cuenta Maestra
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Banca personal por Internet: Transacciones y consultas ilimitadas sin costo
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+
+                                       <span class="helpText">
+                                          No aplican &oacute;rdenes de pago internacional
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Terminal Punto de Venta, sin costo de instalaci&oacute;n y con tarifa preferencial
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+
+                                       <span class="helpText">
+                                          Tarifa preferencial de $99.00 M.N. + IVA por facturaci&oacute;n mensual menor a $17,700 M.N.
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                           </ul>
+
+                           <p class="priceTxt">
+                              $ 399 <span class="textMark">*</span>
+                           </p>
+
+                        </div>
+                        
+                         <button class="acceptMemBtn next-step entMemBtn lonelyBtn waves-effect waves-dark btn-flat add-border tonone" data-mem="1" tms-tab="">
+                           Me interesa
+                        </button>
+
+                     </div>
+
+                     <div class="membershipWrapper">
+                        <div class="membershipBox bsMem">
+                           <p class="membershipTitle">
+                              Membres&iacute;a HSBC Fusion
+                              <br>
+                              Negocios
+                           </p>
+
+                           <p class="membershipSubtitle">
+                              Membres&iacute;a HSBC Fusion Empresario, m&aacute;s:
+                           </p>
+
+                           <ul class="iconsList">
+                              <li class="iconItm">
+                                 <p>HSBCnet con soluciones de pago de nómina y cuotas obrero patronales</p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/icon-payroll.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p>Red de negocios HSBC Connections Hub</p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/icon-hub.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                           </ul>
+
+                           <button class="moreBenefitsBtn" tms-tab="">
+                              M&aacute;s beneficios
+                              <img src="assets/imgs/chevron-right.svg" class="responsive-img">
+                           </button>
+
+                           <ul class="iconsList extraBenefits">
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Todos los beneficios de la membres&iacute;a HSBC Fusion Empresario
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+                                       <span class="helpText">
+                                          Cuenta HSBC Advance o Premier, Cuenta Maestra o Cuenta Maestra Empresarial, Terminal Punto de Venta
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    HSBCnet B&aacute;sica con transacciones y consultas ilimitadas sin costo
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+                                       <span class="helpText">
+                                          No aplican &oacute;rdenes de pago internacional
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Dispersi&oacute;n de N&oacute;mina HSBC, ilimitadas a trav&eacute;s de HSBCnet
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Acceso gratis a la Red de Negocios HSBC Connections Hub
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+                                       <span class="helpText">
+                                          La red internacional de empresas para establecer conexi&oacute;n con compradores y vendedores globales
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                           </ul>
+
+                           <p class="priceTxt">
+                              $ 599 <span class="textMark">*</span>
+                           </p>
+
+                        </div>
+
+                        <button class="acceptMemBtn next-step bsMemBtn lonelyBtn waves-effect waves-dark btn-flat add-border tonone" data-mem="2" tms-tab="">
+                           Me interesa
+                        </button>
+                     </div>
+
+                     <div class="membershipWrapper">
+                        <div class="membershipBox dBsMem">
+                           <p class="membershipTitle">
+                              Membres&iacute;a HSBC Fusion
+                              <br>
+                              Negocios Digital
+                           </p>
+
+                           <p class="membershipSubtitle">
+                              Membres&iacute;a HSBC Fusion Negocios, m&aacute;s:
+                           </p>
+
+                           <ul class="iconsList">
+                              <li class="iconItm">
+                                 <p>Oficina Digital con aplicaciones contables, email empresarial, almacenamiento en la nube, entre muchos otros</p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/digitalOfficePurple.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                           </ul>
+
+                           <button class="moreBenefitsBtn" tms-tab="">
+                              M&aacute;s beneficios
+                              <img src="assets/imgs/chevron-right.svg" class="responsive-img">
+                           </button>
+
+                           <ul class="iconsList extraBenefits">
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Todos los beneficios de la membres&iacute;a HSBC Fusion Empresario y HSBC Fusion Negocios
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+                                       <span class="helpText">
+                                          Cuenta HSBC Advance o Premier, Cuenta Maestra o Cuenta Maestra Empresarial, Terminal Punto de Venta, Dispersi&oacute;n de N&oacute;mina, Acceso gratis a la Red de Negocios HSBC Connections Hub
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    HSBCnet Negocios con transacciones y consultas ilimitadas sin costo
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+                                       <span class="helpText">
+                                          No aplican &oacute;rdenes de pago internacional
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+                              <li class="iconItm">
+                                 <p class="textWithTooltip">
+                                    Oficina Digital, Acceso a Marketplace, incluyendo la descarga de las aplicaciones buzondigital, workmail, workdocs, contarte.mx
+                                    <span class="questionIconMem">
+                                       <img src="assets/imgs/info.svg" class="iconSVGImg">
+                                       <span class="helpText">
+                                          Vende tus productos a trav&eacute;s de tu propia tienda en l&iacute;nea con Marketplace, m&aacute;s correo electr&oacute;nico empresarial y herramientas contables para tu negocio
+                                       </span>
+                                    </span> 
+                                 </p>
+                                 <span class="icon">
+                                    <img src="assets/imgs/checkmark.svg" class="responsive-img">
+                                 </span>
+                              </li>
+
+                           </ul>
+
+                           <p class="priceTxt">
+                              $ 1,299 <span class="textMark">*</span>
+                           </p>
+                        </div>
+
+                        <button class="acceptMemBtn next-step dBsMemBtn lonelyBtn waves-effect waves-dark btn-flat add-border tonone" data-mem="3" tms-tab=""> 
+                           Me interesa
+                        </button>
+                     </div>
+
+
+                  </div>
+
+                  <div class="disclaimer">
+                     <div class="ipabDiv">
+                        <span class="ipabIcon">
+                           <img src="assets/imgs/ipab.png">
+                        </span>
+                        <p class="ipabTxt">
+                           Las cuentas a la vista relacionadas a las Membres&iacute;as HSBC Fusion se encuentran protegidas por el IPAB hasta por un monto equivalente a 400 mil UDI por cliente por instituci&oacute;n, lo anterior, de conformidad con las disposiciones legales que regulan a dicho Instituto <a href="http://www.ipab.org.mx/fusion" class="termsLink" target="_blank">www.ipab.org.mx</a>
+                        </p>
+                     </div>
+                     <p>
+                        *Cuota mensual. Precios en moneda nacional más IVA.
+                        <br>
+                        <br>
+                        Consulta requisitos, t&eacute;rminos, condiciones de contrataci&oacute;n y comisiones en <a href="http://www.hsbc.com.mx/fusion" class="termsLink" target="_blank">www.hsbc.com.mx/fusion</a>
+                     </p>
+                  </div>
+               </div>
+            </li>
+
+            <!-- folio number and secondEnd view -->
+            <li id="secondEnd" class="step lastStep" data-step-name="secondEnd">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="step-title-h gradient">
+                        <p class="fullGradient">¡Tenemos tu membres&iacute;a, <strong><span class="userName tocapitalize"></span></strong>!</p>
+                     </div>
+
+                     <div class="col s12 m6 noPL firstSideLastStep">
+                        <p class="approachTimeTxt">En menos de <strong>24 horas</strong> te llamaremos para dar seguimiento a tus dos solicitudes con un solo folio:</p>
+
+                        <div class="folioWrapper">
+                           <div class="leftGradient"></div>
+                           <span class="folio">
+                              <strong class="folioCont">016 788 129 342</strong>
+                           </span>
+                        </div>
+
+                        <div class="col s12 success-actions">
+                           <div class="col s12 m6">
+                              <a href="" class="align-to-icon printBtn" tms-tab="">
+                                 <img src="assets/imgs/print.svg" class="iconSVGImg printIcon">
+                              Imprime tu folio</a>
+                           </div>
+                           <div class="col s12 m6 withFlex">
+                              <img src="assets/imgs/share.svg" class="iconSVGImg shareIcon">
+                              <a class="align-to-icon shareLink" tms-tab="">
+                                 Comparte en tus redes
+                              </a>
+                              <span class="shareOnNet-AFTER" style="display: none" data-social="L" tms-tab="">
+                                 <!-- <script type="in/Login"></script> -->
+                                 LinkedIn
+                              </span>
+                              <span class="shareOnNet" data-social="F" tms-tab="">
+                                 Facebook
+                              </span>
+                              <span class="shareOnNet" data-social="T" tms-tab="">
+                                 Twitter
+                              </span>
+                           </div>
+                        </div>
+
+                        <small>
+                           Consulta requisitos, t&eacute;rminos, condiciones de contrataci&oacute;n y comisiones en: <a href="http://www.hsbc.com.mx/fusion" class="termsLink" target="_blank">http://www.hsbc.com.mx/fusion</a>
+                        </small>
+                     </div>
+
+                     <div class="col s12 m6 secondSideLastStep">
+                        <p class="requirementsTitle">Recuerda tener como m&iacute;nimo:</p>
+
+                        <ul class="ul-disc">
+                           <li>Identificaci&oacute;n oficial vigente de los accionistas y representante legal.</li>
+                           <li>Acta constitutiva.</li>
+                           <li>C&eacute;dula de Identificaci&oacute;n Fiscal.</li>
+                           <li>Comprobante de domicilio vigente de la empresa y de los accionistas.</li>
+                        </ul>
+
+                        <p class="callAction align-to-icon">
+                           <img src="assets/imgs/call.svg" class="iconSVGImg phoneIcon">
+                           Si tienes dudas ll&aacute;manos al 
+                           <strong>(55) 5234-9889</strong>
+                           <strong>Centro de Atenci&oacute;n HSBC Fusion</strong>
+                        </p>
+
+                        <a href="http://www.hsbc.com.mx/fusion" class="backFinalBtn termsLink align-to-icon" tms-tab="">
+                           <img src="assets/imgs/arrow-left.svg" class="iconSVGImg">
+                        Regresa a HSBC Fusion</a>
+                     </div>
+
+                  </div>
+               </div>
+            </li>
+
+         </ul>
+
+      </form>
+
+
+      <div class="mistakeDiv container">
+         <div class="shadowDiv"></div>
+         <div class="row">
+            <div class="messageCont col s10 offset-s1 m6 offset-m3">
+               <span class="closeSpan">
+                  <img src="assets/imgs/close.svg" class="iconSVGImg">
+               </span>
+               <p class="errMsg">Lo sentimos, por el momento no podemos procesar tu solicitud. Inténtalo más tarde.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="rightBottmImgsContainer"></div>
+
+
+      <div class="progressBar">
+         <div class="barStep" data-step="1"></div>
+         <div class="barStep" data-step="2"></div>
+         <span class="backBtn" tms-tab="">
+            <img src="assets/imgs/arrow-left.svg" class="iconSVGImg small">
+            Atr&aacute;s
+         </span>
+         <div class="barStep" data-step="3"></div>
+         <div class="barStep" data-step="4"></div>
+         <div class="barStep" data-step="5"></div>
+         <div class="barStep" data-step="6"></div>
+         <div class="barStep" data-step="7"></div>
+         <div class="barStep" data-step="8"></div>
+      </div>
+
+      <!--[if lt IE 9 ]>   
+      <script src="js/es5-shim.js"></script>
+      <![endif]-->
+         
+      <!-- jQuery -->
+      <script id="jqueryScript" src="js/jquery-3.2.1.min.js"></script>
+
+      <script src="js/ie-only.js"></script>
+      <script src="js/featureDetection.js"></script>
+      
+      <!--[if lt IE 9 ]>
+      <script src="js/jquery-1.10.2.min.js"></script>     
+      <script src="js/es5-shim.js"></script>
+      <![endif]-->
+
+      <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+      <!-- Materializecss compiled and minified JavaScript -->
+      <script src="js/materialize.min.js"></script>
+      <script src="js/appBundle.js"></script>
+   </body>
+</html>

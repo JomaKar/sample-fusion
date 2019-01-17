@@ -1,0 +1,2276 @@
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: "Univers Next for HSBC" !important; }
+
+body {
+  height: 100vh; }
+  body strong {
+    font-weight: 700; }
+  body input {
+    color: #1b1b1b !important; }
+  body .tonone {
+    text-transform: none;
+    line-height: initial; }
+    body .tonone.right {
+      float: right; }
+  body .tolowercase {
+    text-transform: lowercase; }
+  body .tocapitalize {
+    text-transform: capitalize; }
+  body input:not([type]).valid,
+  body input:not([type]):focus.valid,
+  body input[type=text].valid,
+  body input[type=text]:focus.valid,
+  body input[type=password].valid,
+  body input[type=password]:focus.valid,
+  body input[type=email].valid,
+  body input[type=email]:focus.valid,
+  body input[type=url].valid,
+  body input[type=url]:focus.valid,
+  body input[type=time].valid,
+  body input[type=time]:focus.valid,
+  body input[type=date].valid,
+  body input[type=date]:focus.valid,
+  body input[type=datetime].valid,
+  body input[type=datetime]:focus.valid,
+  body input[type=datetime-local].valid,
+  body input[type=datetime-local]:focus.valid,
+  body input[type=tel].valid,
+  body input[type=tel]:focus.valid,
+  body input[type=number].valid,
+  body input[type=number]:focus.valid,
+  body input[type=search].valid,
+  body input[type=search]:focus.valid,
+  body textarea.materialize-textarea.valid,
+  body textarea.materialize-textarea:focus.valid {
+    border-bottom: 1px solid #d7d8d6;
+    -webkit-box-shadow: 0 1px 0 0 #d7d8d6;
+            box-shadow: 0 1px 0 0 #d7d8d6; }
+  body input:not([type]):focus:not([readonly]),
+  body input[type=text]:focus:not([readonly]),
+  body input[type=password]:focus:not([readonly]),
+  body input[type=email]:focus:not([readonly]),
+  body input[type=url]:focus:not([readonly]),
+  body input[type=time]:focus:not([readonly]),
+  body input[type=date]:focus:not([readonly]),
+  body input[type=datetime]:focus:not([readonly]),
+  body input[type=datetime-local]:focus:not([readonly]),
+  body input[type=tel]:focus:not([readonly]),
+  body input[type=number]:focus:not([readonly]),
+  body input[type=search]:focus:not([readonly]),
+  body textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #d7d8d6;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #1b1b1b !important; }
+  body #creditForm {
+    position: relative;
+    top: 48px;
+    min-height: -webkit-calc(100% - 100px);
+    min-height: calc(100% - 100px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  body .stepper {
+    padding: 0 15px;
+    max-width: 1020px;
+    min-height: 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0px; }
+  body .step {
+    height: 0;
+    margin-bottom: 0px !important; }
+    body .step.done {
+      display: none; }
+    body .step.active {
+      height: auto;
+      display: block; }
+      body .step.active .step-content {
+        display: block !important; }
+    body .step:before {
+      display: none; }
+    body .step.small-step .step-content {
+      max-width: 380px;
+      margin: 0 auto; }
+      body .step.small-step .step-content.icons {
+        max-width: 75%;
+        margin-top: 40px; }
+    body .step.one-field-step .step-actions {
+      width: auto;
+      padding: 20px 0;
+      right: 20px;
+      left: auto;
+      background: none;
+      position: absolute; }
+      body .step.one-field-step .step-actions button {
+        padding: 0;
+        left: 10px; }
+    body .step:after {
+      display: none !important; }
+    body .step > .step-title {
+      visibility: hidden; }
+    body .step .welcomeContent {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto; }
+      body .step .welcomeContent > div {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+        body .step .welcomeContent > div > p {
+          width: inherit; }
+  body .gradient-bg, body .gradient p, body .gradient.input-field label:not(.invalid) {
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from(#169ad3), to(#7a5aa5));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, #7a5aa5, #169ad3);
+    /* Firefox 3.6+ */
+    /* IE 10 */
+    background: -ms-linear-gradient(left, #7a5aa5, #169ad3);
+    /* IE 9-6 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a5aa5', endColorstr='#169ad3',GradientType=0 );
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left, #7a5aa5, #169ad3);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    body .gradient-bg.fullGradient, body .gradient p.fullGradient, body .gradient.input-field label.fullGradient:not(.invalid) {
+      /* Safari 4-5, Chrome 1-9 */
+      background: -webkit-gradient(linear, left top, right top, from(#db0011), color-stop(51%, #b9348b), to(#169ad3));
+      /* Safari 5.1, Chrome 10+ */
+      background: -webkit-linear-gradient(left, #db0011, #b9348b 51%, #169ad3);
+      /* Firefox 3.6+ */
+      /* IE 10 */
+      /* Opera 11.10+ */
+      background: -o-linear-gradient(left, #db0011, #b9348b 51%, #169ad3);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0011', endColorstr='#169ad3',GradientType=0 );
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+  body .flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex; }
+    body .flexbox.btn-flat {
+      line-height: initial;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -moz-box-align: center;
+           align-items: center; }
+      body .flexbox.btn-flat .material-icons {
+        margin-left: 8px; }
+  body .gradient p {
+    font-size: 18px; }
+    body .gradient p span, body .gradient p strong {
+      font-weight: 600; }
+    body .gradient p.titleTxt {
+      margin-top: 0; }
+      body .gradient p.titleTxt.welcomeTxt {
+        width: 100%;
+        text-align: center; }
+    body .gradient p.medium {
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: -0.7px; }
+  body .gradient.input-field label:not(.invalid) {
+    font-size: 16px;
+    font-weight: 700; }
+  body .gradient.input-field input:not([type]).valid, body .gradient.input-field input:not([type]):focus.valid, body .gradient.input-field input[type=text].valid, body .gradient.input-field input[type=text]:focus.valid, body .gradient.input-field input[type=password].valid, body .gradient.input-field input[type=password]:focus.valid, body .gradient.input-field input[type=email].valid, body .gradient.input-field input[type=email]:focus.valid, body .gradient.input-field input[type=url].valid, body .gradient.input-field input[type=url]:focus.valid, body .gradient.input-field input[type=time].valid, body .gradient.input-field input[type=time]:focus.valid, body .gradient.input-field input[type=date].valid, body .gradient.input-field input[type=date]:focus.valid, body .gradient.input-field input[type=datetime].valid, body .gradient.input-field input[type=datetime]:focus.valid, body .gradient.input-field input[type=datetime-local].valid, body .gradient.input-field input[type=datetime-local]:focus.valid, body .gradient.input-field input[type=tel].valid, body .gradient.input-field input[type=tel]:focus.valid, body .gradient.input-field input[type=number].valid, body .gradient.input-field input[type=number]:focus.valid, body .gradient.input-field input[type=search].valid, body .gradient.input-field input[type=search]:focus.valid, body .gradient.input-field textarea.materialize-textarea.valid, body .gradient.input-field textarea.materialize-textarea:focus.valid {
+    font-size: 24px;
+    font-weight: 600; }
+  body .gradient.input-field input:not([type]):focus:not([readonly]), body .gradient.input-field input[type=text]:focus:not([readonly]), body .gradient.input-field input[type=password]:focus:not([readonly]), body .gradient.input-field input[type=email]:focus:not([readonly]), body .gradient.input-field input[type=url]:focus:not([readonly]), body .gradient.input-field input[type=time]:focus:not([readonly]), body .gradient.input-field input[type=date]:focus:not([readonly]), body .gradient.input-field input[type=datetime]:focus:not([readonly]), body .gradient.input-field input[type=datetime-local]:focus:not([readonly]), body .gradient.input-field input[type=tel]:focus:not([readonly]), body .gradient.input-field input[type=number]:focus:not([readonly]), body .gradient.input-field input[type=search]:focus:not([readonly]), body .gradient.input-field textarea.materialize-textarea:focus:not([readonly]) {
+    font-size: 24px;
+    font-weight: 600;
+    color: #d7d8d6; }
+  body .gradient.step-title-h p {
+    font-size: 20px;
+    font-weight: 700; }
+  body .align-to-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -moz-box-align: center;
+         align-items: center; }
+    body .align-to-icon .material-icons {
+      font-size: 18px;
+      margin-right: 8px; }
+  body .step-content button.add-border {
+    border: 1px solid #1b1b1b; }
+  body .step-content ul li {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -moz-box-align: center;
+         align-items: center; }
+  body .step-content .step-header p {
+    font-size: 20px;
+    margin-top: 0; }
+    body .step-content .step-header p.bigFont {
+      font-size: 24px; }
+    body .step-content .step-header p span {
+      font-weight: 700; }
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  border: 1.5px solid #d7d8d6;
+  width: 20px;
+  height: 20px; }
+
+[type="radio"].with-gap:checked + label:before {
+  border: 1.5px solid #1b1b1b;
+  width: 20px;
+  height: 20px; }
+
+[type="radio"].with-gap:checked + label:after {
+  border: 4px solid #1b1b1b;
+  width: 20px;
+  height: 20px; }
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
+  background-color: #1b1b1b; }
+
+[type="checkbox"] + label:before,
+[type="checkbox"]:not(.filled-in) + label:after {
+  border: 1.5px solid #d7d8d6; }
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+  padding-left: 33px !important;
+  padding-top: 1.5px; }
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+  border-bottom: 1px solid #d7d8d6 !important; }
+
+.withInput .step-content {
+  max-width: 311px !important; }
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.standardTitle {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1.4;
+  letter-spacing: -0.3px; }
+
+.customTxt {
+  line-height: 1.4;
+  letter-spacing: -0.2px; }
+
+p.forceDouble {
+  max-width: 337px !important;
+  font-size: 20px !important; }
+
+span.requiredField {
+  color: red;
+  -webkit-text-fill-color: red;
+  font-size: 11px;
+  position: relative;
+  top: -19px;
+  display: block; }
+
+img.iconSVGImg {
+  max-height: 14px;
+  width: auto;
+  margin-right: 7px; }
+  img.iconSVGImg.small {
+    height: 10px; }
+
+button[disabled] {
+  cursor: not-allowed; }
+
+.hiddenEl {
+  visibility: hidden;
+  position: absolute; }
+
+.noP {
+  padding: 0 !important; }
+
+.noPL {
+  padding-left: 0 !important; }
+
+.termsLink {
+  text-decoration: underline !important;
+  color: #1b1b1b; }
+
+.noPR {
+  padding-right: 0 !important; }
+
+.noMB {
+  margin-bottom: 0 !important; }
+
+.p16px {
+  font-size: 16px; }
+
+.withFlex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.myCentered {
+  text-align: center;
+  margin: auto; }
+
+.mt16 {
+  margin-top: 16px !important; }
+
+.semiStrongWords {
+  font-weight: 600; }
+
+.noVisible {
+  visibility: hidden !important; }
+
+.shareLink, .shareIcon {
+  display: none !important; }
+
+.lonelyBtn {
+  height: 40px !important;
+  background-color: transparent !important;
+  color: #1b1b1b !important;
+  border-radius: 0 !important; }
+  .lonelyBtn:hover, .lonelyBtn:focus {
+    background-color: #EBEBEA !important; }
+  .lonelyBtn:active {
+    background-color: #D7D8D6 !important; }
+
+@media (min-width: 600px) {
+  body #creditForm {
+    top: 34px; }
+  body .stepper {
+    padding: 0; } }
+
+@media (min-width: 1024px) {
+  body .stepper {
+    margin: auto;
+    min-width: 1000px; }
+  body .gradient p.medium {
+    font-size: 41px; }
+  body .step-content .step-header p.bigFont {
+    font-size: 30px; }
+  p.forceDouble.customTxt {
+    max-width: 358px !important;
+    font-size: 24px !important; }
+  .withInput .step-content {
+    max-width: 380px !important; }
+  .standardTitle {
+    font-size: 27px !important; }
+  .lonelyBtn.next-step {
+    font-size: 16px;
+    height: 46px !important; }
+  body .gradient.step-title-h p {
+    font-size: 24px; } }
+
+@media (min-width: 1300px) {
+  body .gradient p.medium {
+    font-size: 46px; }
+  .standardTitle {
+    font-size: 30px !important; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.midWrapper {
+  width: 50%;
+  float: left; }
+
+#memberships.active, #membershipsAfter.active {
+  margin: 40px 0; }
+  #memberships.active .step-content, #membershipsAfter.active .step-content {
+    margin-left: 0; }
+  #memberships.active .membershipRow, #membershipsAfter.active .membershipRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0;
+    margin-top: 40px; }
+    #memberships.active .membershipRow .membershipWrapper, #membershipsAfter.active .membershipRow .membershipWrapper {
+      width: 100%;
+      margin: 0 auto 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #memberships.active .membershipRow .membershipWrapper .membershipBox, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox {
+        width: 100%;
+        border: solid 1px #d7d8d6;
+        padding: 20px 20px 40px;
+        background-position: bottom right;
+        background-size: 53%;
+        background-repeat: no-repeat;
+        min-height: 380px;
+        margin-bottom: 8px; }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox.entMem, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox.entMem {
+          background-image: url(../assets/imgs/side-2.png); }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox.bsMem, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox.bsMem {
+          background-image: url(../assets/imgs/side-3.png); }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox.dBsMem, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox.dBsMem {
+          background-image: url(../assets/imgs/side-6.png); }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipTitle, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipTitle {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.38;
+          letter-spacing: -0.2px;
+          color: #1b1b1b;
+          margin-bottom: 23px; }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipSubtitle, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipSubtitle {
+          text-align: left;
+          font-size: 11px;
+          line-height: 1.82;
+          text-align: left;
+          color: #1b1b1b;
+          height: 20px;
+          margin: 0 0 26px; }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume {
+          font-size: 14px;
+          margin-bottom: 30px;
+          height: 20px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex; }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel {
+            padding: 5px;
+            text-align: center;
+            border-radius: 3px;
+            width: 28px;
+            height: 28px;
+            padding-top: 6px;
+            display: block;
+            margin: 0 5px; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.imgCont, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.imgCont {
+              padding-top: 6px; }
+              #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.imgCont.extra, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.imgCont.extra {
+                padding-top: 7px;
+                padding-left: 6px; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black {
+              background-color: #1b1b1b;
+              color: white;
+              margin-left: 0;
+              padding-left: 8px;
+              padding-right: 8px;
+              font-size: 10px;
+              width: -webkit-fit-content;
+              width: -moz-fit-content;
+              width: fit-content; }
+              #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.dbl, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.dbl {
+                height: 37px;
+                text-align: left;
+                font-size: 9px; }
+              #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.lastOfType, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.lastOfType {
+                margin-left: 5px; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.pink, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.pink {
+              background-color: #bc2f7f; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.blue, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.blue {
+              background-color: #1690d3; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.purple, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.purple {
+              background-color: #6a64ac; }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .plusWrapper, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .plusWrapper {
+            display: block;
+            float: left; }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList {
+          list-style-type: none;
+          padding: 0; }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList.extraBenefits, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList.extraBenefits {
+            width: 100%;
+            display: none;
+            -webkit-transition: 700ms ease-out display;
+            transition: 700ms ease-out display; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList.extraBenefits.showing, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList.extraBenefits.showing {
+              display: block;
+              margin-bottom: 38px; }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList .iconItm, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList .iconItm {
+            padding-left: 30px;
+            position: relative;
+            font-size: 13px;
+            letter-spacing: -0.2px;
+            margin-bottom: 8px; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList .iconItm p, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList .iconItm p {
+              margin: 0;
+              position: relative; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList .iconItm .icon, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList .iconItm .icon {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              left: 0;
+              top: 4px;
+              display: block; }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn {
+          margin-top: 25px;
+          font-size: 13px;
+          letter-spacing: -0.2px;
+          color: #1b1b1b;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 16px;
+          border: none;
+          padding-left: 0;
+          background-color: transparent;
+          cursor: pointer; }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn.clicked, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn.clicked {
+            margin-bottom: 26px; }
+            #memberships.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn.clicked img, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn.clicked img {
+              -webkit-transform: rotate(270deg);
+                      transform: rotate(270deg); }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn:focus, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn:focus {
+            border: none;
+            background-color: transparent; }
+          #memberships.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn img, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .moreBenefitsBtn img {
+            margin-left: 7px;
+            -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+            position: relative;
+            top: 5px; }
+        #memberships.active .membershipRow .membershipWrapper .membershipBox .priceTxt, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .priceTxt {
+          font-size: 28px;
+          font-weight: 300;
+          letter-spacing: -0.3px;
+          color: #1b1b1b; }
+      #memberships.active .membershipRow .membershipWrapper .acceptMemBtn, #membershipsAfter.active .membershipRow .membershipWrapper .acceptMemBtn {
+        border-radius: 0;
+        border: 1px solid #333; }
+  #memberships.active .disclaimer, #membershipsAfter.active .disclaimer {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.64;
+    display: inherit;
+    color: #1b1b1b;
+    margin: 46px 0 30px;
+    text-align: left; }
+    #memberships.active .disclaimer .ipabDiv, #membershipsAfter.active .disclaimer .ipabDiv {
+      width: 100%; }
+      #memberships.active .disclaimer .ipabDiv .ipabIcon, #membershipsAfter.active .disclaimer .ipabDiv .ipabIcon {
+        display: block;
+        height: 34px;
+        width: 52px;
+        margin-right: 16px;
+        float: left; }
+        #memberships.active .disclaimer .ipabDiv .ipabIcon img, #membershipsAfter.active .disclaimer .ipabDiv .ipabIcon img {
+          width: 100%;
+          height: auto; }
+      #memberships.active .disclaimer .ipabDiv .ipabTxt, #membershipsAfter.active .disclaimer .ipabDiv .ipabTxt {
+        display: inline; }
+      #memberships.active .disclaimer .ipabDiv + p, #membershipsAfter.active .disclaimer .ipabDiv + p {
+        margin-top: 28px; }
+
+.questionIconMem {
+  width: 16px;
+  height: 16px;
+  margin-left: -1px;
+  text-align: center;
+  line-height: 1;
+  -webkit-text-fill-color: #1b1b1b;
+  color: #1b1b1b !important;
+  font-size: 14px;
+  position: relative;
+  top: 2.5px; }
+  .questionIconMem img.iconSVGImg {
+    width: 12px; }
+  .questionIconMem .helpText {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: -20px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    font-weight: normal;
+    top: 15px;
+    padding: 6px 12px;
+    font-size: 11px;
+    width: 118px;
+    border: 1px solid #1b1b1b;
+    -webkit-text-fill-color: #1b1b1b;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 8px 0 rgba(27, 27, 27, 0.3);
+            box-shadow: 0px 4px 8px 0 rgba(27, 27, 27, 0.3);
+    text-align: left; }
+    .questionIconMem .helpText.second {
+      left: 60px;
+      top: 30px; }
+  .questionIconMem:hover .helpText, .questionIconMem:focus .helpText {
+    display: block; }
+
+@media (min-width: 600px) {
+  #memberships.active .step-content, #membershipsAfter.active .step-content {
+    margin-left: 41px; }
+  #memberships.active .membershipRow .membershipWrapper, #membershipsAfter.active .membershipRow .membershipWrapper {
+    width: 30%;
+    max-width: 272px;
+    min-width: 240px;
+    margin: 10px;
+    margin-bottom: 30px;
+    float: left; }
+    #memberships.active .membershipRow .membershipWrapper:first-of-type, #memberships.active .membershipRow .membershipWrapper:last-of-type, #membershipsAfter.active .membershipRow .membershipWrapper:first-of-type, #membershipsAfter.active .membershipRow .membershipWrapper:last-of-type {
+      margin-left: 0; }
+    #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList {
+      min-height: 105px; }
+      #memberships.active .membershipRow .membershipWrapper .membershipBox .iconsList.extraBenefits, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .iconsList.extraBenefits {
+        min-height: 0px; }
+  .questionIconMem .helpText {
+    left: -19px; }
+    .questionIconMem .helpText.second {
+      left: 100px;
+      top: 0px; } }
+
+@media (min-width: 835px) {
+  #memberships.active .membershipRow .membershipWrapper:last-of-type, #membershipsAfter.active .membershipRow .membershipWrapper:last-of-type {
+    margin-left: 10px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body .splash {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  background-image: url(../assets/imgs/splash.jpg);
+  background-color: white;
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: background 200ms;
+  transition: background 200ms;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  body .splash > img {
+    height: auto;
+    width: 200px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+  body .splash .splashTxt {
+    text-align: center;
+    margin: 0;
+    color: white; }
+
+@media (min-width: 600px) {
+  body .splash {
+    background-size: 150% !important; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body header.appGradientHeader {
+  background-image: -webkit-linear-gradient(top, #eee, #FFF);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#FFF));
+  background-image: linear-gradient(top, #eee, #FFF);
+  height: 280px;
+  width: 100vw;
+  position: absolute; }
+
+body .brandIcon {
+  position: relative;
+  left: 21px;
+  top: 48px;
+  height: auto;
+  width: 120px;
+  z-index: 2; }
+
+body .floatingText {
+  z-index: 1;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 300;
+  color: #1b1b1b;
+  right: 15px;
+  top: 60px; }
+  body .floatingText.membershipsTxt {
+    top: 49px; }
+
+.progressBar {
+  height: 8px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background: -webkit-gradient(linear, left top, right top, from(#db0011), color-stop(51%, #b9348b), to(#7a5aa5));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #db0011, #b9348b 51%, #169ad3);
+  /* Firefox 3.6+ */
+  /* IE 10 */
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #db0011, #b9348b 51%, #169ad3);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0011', endColorstr='#169ad3',GradientType=0 ); }
+  .progressBar.active {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .progressBar.active .barStep {
+      height: 100%;
+      width: 25%;
+      background-color: #d7d8d6; }
+      .progressBar.active .barStep + span.backBtn {
+        display: none;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        position: absolute;
+        bottom: 32px;
+        left: 21px;
+        cursor: pointer; }
+      .progressBar.active .barStep.done {
+        background-color: transparent; }
+        .progressBar.active .barStep.done + span.backBtn {
+          display: block; }
+
+.rightBottmImgsContainer {
+  width: 35%;
+  min-width: 150px;
+  height: 30vh;
+  min-height: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-size: 82%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  -webkit-transition: 500ms ease-out background;
+  transition: 500ms ease-out background;
+  z-index: -1; }
+
+.mistakeDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none; }
+  .mistakeDiv .shadowDiv {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    left: 0; }
+  .mistakeDiv .row .messageCont {
+    min-height: 150px;
+    background-color: white;
+    padding: 17px;
+    color: #1b1b1b;
+    font-size: 1.2em;
+    position: relative;
+    margin-top: -webkit-calc(50vh - 75px);
+    margin-top: calc(50vh - 75px);
+    z-index: 3; }
+    .mistakeDiv .row .messageCont .closeSpan {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      overflow: visible;
+      cursor: pointer;
+      right: 20px; }
+      .mistakeDiv .row .messageCont .closeSpan img.iconSVGImg {
+        max-height: none;
+        height: inherit; }
+    .mistakeDiv .row .messageCont .errMsg {
+      margin-top: 30px; }
+
+@media (min-width: 600px) {
+  body .brandIcon {
+    left: 41px;
+    width: 135px; }
+  body .floatingText {
+    right: 54px; }
+    body .floatingText.membershipsTxt {
+      top: 60px; }
+  .progressBar.active .barStep + span.backBtn {
+    left: 41px; }
+  .rightBottmImgsContainer {
+    background-size: 60%; } }
+
+@media (min-width: 1024px) {
+  .progressBar.active .barStep + span.backBtn {
+    font-size: 20px; }
+    .progressBar.active .barStep + span.backBtn img.iconSVGImg.small {
+      height: 15px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-family: "Univers Next for HSBC" !important; }
+
+body {
+  height: 100vh; }
+  body strong {
+    font-weight: 700; }
+  body input {
+    color: #1b1b1b !important; }
+  body .tonone {
+    text-transform: none;
+    line-height: initial; }
+    body .tonone.right {
+      float: right; }
+  body .tolowercase {
+    text-transform: lowercase; }
+  body .tocapitalize {
+    text-transform: capitalize; }
+  body input:not([type]).valid,
+  body input:not([type]):focus.valid,
+  body input[type=text].valid,
+  body input[type=text]:focus.valid,
+  body input[type=password].valid,
+  body input[type=password]:focus.valid,
+  body input[type=email].valid,
+  body input[type=email]:focus.valid,
+  body input[type=url].valid,
+  body input[type=url]:focus.valid,
+  body input[type=time].valid,
+  body input[type=time]:focus.valid,
+  body input[type=date].valid,
+  body input[type=date]:focus.valid,
+  body input[type=datetime].valid,
+  body input[type=datetime]:focus.valid,
+  body input[type=datetime-local].valid,
+  body input[type=datetime-local]:focus.valid,
+  body input[type=tel].valid,
+  body input[type=tel]:focus.valid,
+  body input[type=number].valid,
+  body input[type=number]:focus.valid,
+  body input[type=search].valid,
+  body input[type=search]:focus.valid,
+  body textarea.materialize-textarea.valid,
+  body textarea.materialize-textarea:focus.valid {
+    border-bottom: 1px solid #d7d8d6;
+    -webkit-box-shadow: 0 1px 0 0 #d7d8d6;
+            box-shadow: 0 1px 0 0 #d7d8d6; }
+  body input:not([type]):focus:not([readonly]),
+  body input[type=text]:focus:not([readonly]),
+  body input[type=password]:focus:not([readonly]),
+  body input[type=email]:focus:not([readonly]),
+  body input[type=url]:focus:not([readonly]),
+  body input[type=time]:focus:not([readonly]),
+  body input[type=date]:focus:not([readonly]),
+  body input[type=datetime]:focus:not([readonly]),
+  body input[type=datetime-local]:focus:not([readonly]),
+  body input[type=tel]:focus:not([readonly]),
+  body input[type=number]:focus:not([readonly]),
+  body input[type=search]:focus:not([readonly]),
+  body textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #d7d8d6;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #1b1b1b !important; }
+  body #creditForm {
+    position: relative;
+    top: 48px;
+    min-height: -webkit-calc(100% - 100px);
+    min-height: calc(100% - 100px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  body .stepper {
+    padding: 0 15px;
+    max-width: 1020px;
+    min-height: 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0px; }
+  body .step {
+    height: 0;
+    margin-bottom: 0px !important; }
+    body .step.done {
+      display: none; }
+    body .step.active {
+      height: auto;
+      display: block; }
+      body .step.active .step-content {
+        display: block !important; }
+    body .step:before {
+      display: none; }
+    body .step.small-step .step-content {
+      max-width: 380px;
+      margin: 0 auto; }
+      body .step.small-step .step-content.icons {
+        max-width: 75%;
+        margin-top: 40px; }
+    body .step.one-field-step .step-actions {
+      width: auto;
+      padding: 20px 0;
+      right: 20px;
+      left: auto;
+      background: none;
+      position: absolute; }
+      body .step.one-field-step .step-actions button {
+        padding: 0;
+        left: 10px; }
+    body .step:after {
+      display: none !important; }
+    body .step > .step-title {
+      visibility: hidden; }
+    body .step .welcomeContent {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto; }
+      body .step .welcomeContent > div {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+        body .step .welcomeContent > div > p {
+          width: inherit; }
+  body .gradient-bg, body .gradient p, body .gradient.input-field label:not(.invalid) {
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from(#169ad3), to(#7a5aa5));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, #7a5aa5, #169ad3);
+    /* Firefox 3.6+ */
+    /* IE 10 */
+    background: -ms-linear-gradient(left, #7a5aa5, #169ad3);
+    /* IE 9-6 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a5aa5', endColorstr='#169ad3',GradientType=0 );
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left, #7a5aa5, #169ad3);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    body .gradient-bg.fullGradient, body .gradient p.fullGradient, body .gradient.input-field label.fullGradient:not(.invalid) {
+      /* Safari 4-5, Chrome 1-9 */
+      background: -webkit-gradient(linear, left top, right top, from(#db0011), color-stop(51%, #b9348b), to(#169ad3));
+      /* Safari 5.1, Chrome 10+ */
+      background: -webkit-linear-gradient(left, #db0011, #b9348b 51%, #169ad3);
+      /* Firefox 3.6+ */
+      /* IE 10 */
+      /* Opera 11.10+ */
+      background: -o-linear-gradient(left, #db0011, #b9348b 51%, #169ad3);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0011', endColorstr='#169ad3',GradientType=0 );
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+  body .flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex; }
+    body .flexbox.btn-flat {
+      line-height: initial;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -moz-box-align: center;
+           align-items: center; }
+      body .flexbox.btn-flat .material-icons {
+        margin-left: 8px; }
+  body .gradient p {
+    font-size: 18px; }
+    body .gradient p span, body .gradient p strong {
+      font-weight: 600; }
+    body .gradient p.titleTxt {
+      margin-top: 0; }
+      body .gradient p.titleTxt.welcomeTxt {
+        width: 100%;
+        text-align: center; }
+    body .gradient p.medium {
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: -0.7px; }
+  body .gradient.input-field label:not(.invalid) {
+    font-size: 16px;
+    font-weight: 700; }
+  body .gradient.input-field input:not([type]).valid, body .gradient.input-field input:not([type]):focus.valid, body .gradient.input-field input[type=text].valid, body .gradient.input-field input[type=text]:focus.valid, body .gradient.input-field input[type=password].valid, body .gradient.input-field input[type=password]:focus.valid, body .gradient.input-field input[type=email].valid, body .gradient.input-field input[type=email]:focus.valid, body .gradient.input-field input[type=url].valid, body .gradient.input-field input[type=url]:focus.valid, body .gradient.input-field input[type=time].valid, body .gradient.input-field input[type=time]:focus.valid, body .gradient.input-field input[type=date].valid, body .gradient.input-field input[type=date]:focus.valid, body .gradient.input-field input[type=datetime].valid, body .gradient.input-field input[type=datetime]:focus.valid, body .gradient.input-field input[type=datetime-local].valid, body .gradient.input-field input[type=datetime-local]:focus.valid, body .gradient.input-field input[type=tel].valid, body .gradient.input-field input[type=tel]:focus.valid, body .gradient.input-field input[type=number].valid, body .gradient.input-field input[type=number]:focus.valid, body .gradient.input-field input[type=search].valid, body .gradient.input-field input[type=search]:focus.valid, body .gradient.input-field textarea.materialize-textarea.valid, body .gradient.input-field textarea.materialize-textarea:focus.valid {
+    font-size: 24px;
+    font-weight: 600; }
+  body .gradient.input-field input:not([type]):focus:not([readonly]), body .gradient.input-field input[type=text]:focus:not([readonly]), body .gradient.input-field input[type=password]:focus:not([readonly]), body .gradient.input-field input[type=email]:focus:not([readonly]), body .gradient.input-field input[type=url]:focus:not([readonly]), body .gradient.input-field input[type=time]:focus:not([readonly]), body .gradient.input-field input[type=date]:focus:not([readonly]), body .gradient.input-field input[type=datetime]:focus:not([readonly]), body .gradient.input-field input[type=datetime-local]:focus:not([readonly]), body .gradient.input-field input[type=tel]:focus:not([readonly]), body .gradient.input-field input[type=number]:focus:not([readonly]), body .gradient.input-field input[type=search]:focus:not([readonly]), body .gradient.input-field textarea.materialize-textarea:focus:not([readonly]) {
+    font-size: 24px;
+    font-weight: 600;
+    color: #d7d8d6; }
+  body .gradient.step-title-h p {
+    font-size: 20px;
+    font-weight: 700; }
+  body .align-to-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -moz-box-align: center;
+         align-items: center; }
+    body .align-to-icon .material-icons {
+      font-size: 18px;
+      margin-right: 8px; }
+  body .step-content button.add-border {
+    border: 1px solid #1b1b1b; }
+  body .step-content ul li {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -moz-box-align: center;
+         align-items: center; }
+  body .step-content .step-header p {
+    font-size: 20px;
+    margin-top: 0; }
+    body .step-content .step-header p.bigFont {
+      font-size: 24px; }
+    body .step-content .step-header p span {
+      font-weight: 700; }
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+  border: 1.5px solid #d7d8d6;
+  width: 20px;
+  height: 20px; }
+
+[type="radio"].with-gap:checked + label:before {
+  border: 1.5px solid #1b1b1b;
+  width: 20px;
+  height: 20px; }
+
+[type="radio"].with-gap:checked + label:after {
+  border: 4px solid #1b1b1b;
+  width: 20px;
+  height: 20px; }
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
+  background-color: #1b1b1b; }
+
+[type="checkbox"] + label:before,
+[type="checkbox"]:not(.filled-in) + label:after {
+  border: 1.5px solid #d7d8d6; }
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+  padding-left: 33px !important;
+  padding-top: 1.5px; }
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+  border-bottom: 1px solid #d7d8d6 !important; }
+
+.withInput .step-content {
+  max-width: 311px !important; }
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.standardTitle {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1.4;
+  letter-spacing: -0.3px; }
+
+.customTxt {
+  line-height: 1.4;
+  letter-spacing: -0.2px; }
+
+p.forceDouble {
+  max-width: 337px !important;
+  font-size: 20px !important; }
+
+span.requiredField {
+  color: red;
+  -webkit-text-fill-color: red;
+  font-size: 11px;
+  position: relative;
+  top: -19px;
+  display: block; }
+
+img.iconSVGImg {
+  max-height: 14px;
+  width: auto;
+  margin-right: 7px; }
+  img.iconSVGImg.small {
+    height: 10px; }
+
+button[disabled] {
+  cursor: not-allowed; }
+
+.hiddenEl {
+  visibility: hidden;
+  position: absolute; }
+
+.noP {
+  padding: 0 !important; }
+
+.noPL {
+  padding-left: 0 !important; }
+
+.termsLink {
+  text-decoration: underline !important;
+  color: #1b1b1b; }
+
+.noPR {
+  padding-right: 0 !important; }
+
+.noMB {
+  margin-bottom: 0 !important; }
+
+.p16px {
+  font-size: 16px; }
+
+.withFlex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.myCentered {
+  text-align: center;
+  margin: auto; }
+
+.mt16 {
+  margin-top: 16px !important; }
+
+.semiStrongWords {
+  font-weight: 600; }
+
+.noVisible {
+  visibility: hidden !important; }
+
+.shareLink, .shareIcon {
+  display: none !important; }
+
+.lonelyBtn {
+  height: 40px !important;
+  background-color: transparent !important;
+  color: #1b1b1b !important;
+  border-radius: 0 !important; }
+  .lonelyBtn:hover, .lonelyBtn:focus {
+    background-color: #EBEBEA !important; }
+  .lonelyBtn:active {
+    background-color: #D7D8D6 !important; }
+
+@media (min-width: 600px) {
+  body #creditForm {
+    top: 34px; }
+  body .stepper {
+    padding: 0; } }
+
+@media (min-width: 1024px) {
+  body .stepper {
+    margin: auto;
+    min-width: 1000px; }
+  body .gradient p.medium {
+    font-size: 41px; }
+  body .step-content .step-header p.bigFont {
+    font-size: 30px; }
+  p.forceDouble.customTxt {
+    max-width: 358px !important;
+    font-size: 24px !important; }
+  .withInput .step-content {
+    max-width: 380px !important; }
+  .standardTitle {
+    font-size: 27px !important; }
+  .lonelyBtn.next-step {
+    font-size: 16px;
+    height: 46px !important; }
+  body .gradient.step-title-h p {
+    font-size: 24px; } }
+
+@media (min-width: 1300px) {
+  body .gradient p.medium {
+    font-size: 46px; }
+  .standardTitle {
+    font-size: 30px !important; } }
+
+#u_name {
+  font-weight: 700;
+  text-transform: capitalize; }
+
+.placeholderFake {
+  position: absolute;
+  font-size: 24px;
+  color: #d7d8d6;
+  font-weight: 600;
+  top: 3px; }
+
+@media (min-width: 1024px) {
+  .placeholderFake {
+    font-size: 34px;
+    top: -2px; } }
+
+@media (min-width: 1300px) {
+  .placeholderFake {
+    font-size: 38px;
+    top: -5px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.iconsRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .iconsRow .iconCont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .iconsRow .iconCont .iconImg {
+      display: block;
+      margin: 0 auto;
+      max-height: 56px;
+      width: 100%;
+      clear: right; }
+    .iconsRow .iconCont .iconText {
+      display: block;
+      line-height: 1.43;
+      font-size: .85rem;
+      text-align: center;
+      margin: 15px 0;
+      max-width: 150px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; }
+      .iconsRow .iconCont .iconText.headTxt {
+        color: #db0011; }
+      .iconsRow .iconCont .iconText.listenTxt {
+        color: #bc2f7f; }
+      .iconsRow .iconCont .iconText.computerTxt {
+        color: #6a64ac; }
+      .iconsRow .iconCont .iconText.infiniteTxt {
+        color: #169ad3; }
+
+.toAnimate {
+  position: relative;
+  top: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -moz-opacity: 0;
+  -webkit-transition: .3s ease-out all;
+  transition: .3s ease-out all; }
+  .toAnimate.animated {
+    opacity: 100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -moz-opacity: 100; }
+
+.benefitsBtn {
+  margin: 21px auto;
+  font-size: 16px;
+  cursor: pointer; }
+  .benefitsBtn .caret {
+    background-image: url(../assets/imgs/chevron-right.png);
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background-size: 66%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 2px;
+    left: 1px; }
+  .benefitsBtn:hover, .benefitsBtn:focus, .benefitsBtn:active {
+    opacity: .6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; }
+
+.lonelyBtn.benefitsBtn:hover, .lonelyBtn.benefitsBtn:focus {
+  background-color: transparent !important; }
+
+.lonelyBtn.benefitsBtn:active {
+  background-color: transparent !important; }
+
+@media (min-width: 600px) {
+  .toAnimate {
+    top: 12px; }
+    .toAnimate.animated {
+      top: 0;
+      opacity: 100;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -moz-opacity: 100; } }
+
+@media (min-width: 1024px) {
+  .iconsRow .iconCont .iconImg {
+    max-height: 60px; }
+  .iconsRow .iconCont .iconText {
+    font-size: 16px; }
+  .benefitsBtn {
+    font-size: 20px; }
+    .benefitsBtn .caret {
+      top: 1px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body div.withArrBtn + div.step-actions > button:hover, body div.withArrBtn + div.step-actions > button:active, body div.withArrBtn + div.step-actions > button:focus {
+  background-color: transparent;
+  opacity: .6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; }
+
+.withArrBtn input[type=text], .withArrBtn input[type=number] {
+  width: 250px; }
+  .withArrBtn input[type=text]:focus, .withArrBtn input[type=number]:focus {
+    width: 250px !important; }
+
+.withArrBtn + .step-actions {
+  right: unset !important;
+  left: 245px !important; }
+  .withArrBtn + .step-actions .next-step {
+    left: 0 !important;
+    overflow: visible; }
+
+.input-field input.longFormInput {
+  font-size: 16px;
+  height: 22px; }
+  .input-field input.longFormInput + label.invalid {
+    top: 28px !important;
+    left: 0; }
+
+.input-field label {
+  top: -30px !important; }
+  .input-field label.doubleLine {
+    top: -55px !important; }
+  .input-field label.tripleLine {
+    top: -78px !important; }
+  .input-field label.shortLabel {
+    top: -2px !important;
+    left: 0px !important;
+    font-size: 12px; }
+  .input-field label.active {
+    -webkit-transform: translateY(0%) !important;
+    transform: translateY(0%) !important; }
+    .input-field label.active.shortLabel {
+      -webkit-transform: translateY(-98%) !important;
+              transform: translateY(-98%) !important;
+      color: #939393 !important; }
+
+.input-field span.errMsg {
+  position: absolute;
+  display: none;
+  top: -7px;
+  right: 10px;
+  background-color: #ffe6e6;
+  height: 28px;
+  font-size: 13px;
+  padding: 4px 5px 0; }
+
+.dollaIcon {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  top: 10px; }
+
+#creditNumberBtn, #sellsNumberBtn, #debtPayNumberBtn {
+  left: 15px;
+  width: 24px; }
+  #creditNumberBtn > i, #sellsNumberBtn > i, #debtPayNumberBtn > i {
+    margin: 0; }
+
+img.arrow-right {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -moz-opacity: 0.3; }
+  img.arrow-right.onGoing {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -moz-opacity: 1; }
+
+@media (min-width: 600px) {
+  .withArrBtn input[type=text], .withArrBtn input[type=number] {
+    width: 300px; }
+    .withArrBtn input[type=text]:focus, .withArrBtn input[type=number]:focus {
+      width: 300px !important; }
+  .withArrBtn + .step-actions {
+    left: 295px !important; }
+  .input-field label {
+    top: -30px !important; }
+  .input-field span.errMsg {
+    right: 61px; } }
+
+@media (min-width: 1024px) {
+  .input-field label {
+    top: -42px !important; }
+    .input-field label.doubleLine {
+      top: -84px !important; }
+      .input-field label.doubleLine br {
+        display: none !important; }
+    .input-field label.tripleLine {
+      top: -118px !important;
+      font-size: 29px !important; }
+      .input-field label.tripleLine br {
+        display: none !important; }
+  .withArrBtn input[type=text], .withArrBtn input[type=number] {
+    width: 370px; }
+    .withArrBtn input[type=text]:focus, .withArrBtn input[type=number]:focus {
+      width: 370px !important; }
+      .withArrBtn input[type=text]:focus.trickyInput, .withArrBtn input[type=number]:focus.trickyInput {
+        width: 360px !important;
+        padding-left: 5px; }
+    .withArrBtn input[type=text].trickyInput, .withArrBtn input[type=number].trickyInput {
+      width: 360px !important;
+      padding-left: 5px; }
+  .withArrBtn + .step-actions {
+    left: 350px !important; }
+    .withArrBtn + .step-actions button img {
+      width: 23px; }
+  .input-field input[type=text], .input-field input[type=number] {
+    font-size: 34px !important; }
+    .input-field input[type=text].trickyInput, .input-field input[type=number].trickyInput {
+      font-size: 33px !important; }
+    .input-field input[type=text].longFormInput, .input-field input[type=number].longFormInput {
+      font-size: 16px !important; }
+  .dollaIcon {
+    top: -5px;
+    font-size: 34px; } }
+
+@media (min-width: 1300px) {
+  .input-field label {
+    top: -50px !important; }
+    .input-field label.doubleLine {
+      top: -96px !important; }
+  .input-field input[type=text], .input-field input[type=number] {
+    font-size: 38px !important; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.lightSpan {
+  font-weight: 200; }
+
+p.radioWithQuestionWrapper {
+  position: relative; }
+  p.radioWithQuestionWrapper .visibleLabel {
+    -webkit-text-fill-color: black;
+    color: #1b1b1b;
+    background-color: transparent; }
+    p.radioWithQuestionWrapper .visibleLabel + .questionIcon {
+      width: 16px;
+      height: 16px;
+      margin-left: -1px;
+      text-align: center;
+      line-height: 1;
+      -webkit-text-fill-color: #1b1b1b;
+      color: #1b1b1b !important;
+      font-size: 14px;
+      position: relative;
+      top: 2px; }
+      p.radioWithQuestionWrapper .visibleLabel + .questionIcon img.iconSVGImg {
+        max-height: 12px; }
+      p.radioWithQuestionWrapper .visibleLabel + .questionIcon + .helpText {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: 80px;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content;
+        font-weight: normal;
+        top: 30px;
+        padding: 6px 12px;
+        font-size: 11px;
+        max-width: 200px;
+        border: 1px solid #1b1b1b;
+        -webkit-text-fill-color: #1b1b1b;
+        background-color: white;
+        -webkit-box-shadow: 0px 4px 8px 0 rgba(27, 27, 27, 0.3);
+                box-shadow: 0px 4px 8px 0 rgba(27, 27, 27, 0.3); }
+        p.radioWithQuestionWrapper .visibleLabel + .questionIcon + .helpText.second {
+          left: 60px;
+          top: 30px; }
+      p.radioWithQuestionWrapper .visibleLabel + .questionIcon:hover + .helpText, p.radioWithQuestionWrapper .visibleLabel + .questionIcon:focus + .helpText {
+        display: block; }
+
+.visibleLabel {
+  -webkit-text-fill-color: #1b1b1b;
+  color: #1b1b1b;
+  background-color: transparent;
+  font-size: 16px !important; }
+
+@media (min-width: 600px) {
+  p.radioWithQuestionWrapper .visibleLabel + .questionIcon + .helpText {
+    left: 130px;
+    top: -12px; }
+    p.radioWithQuestionWrapper .visibleLabel + .questionIcon + .helpText.second {
+      left: 100px;
+      top: 0px; } }
+
+@media (min-width: 1024px) {
+  .visibleLabel {
+    font-size: 20px !important; }
+  p.radioWithQuestionWrapper .visibleLabel + .questionIcon {
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    margin-left: 3px; }
+    p.radioWithQuestionWrapper .visibleLabel + .questionIcon img.iconSVGImg {
+      max-height: 15px; }
+    p.radioWithQuestionWrapper .visibleLabel + .questionIcon + .helpText {
+      left: 168px;
+      top: -12px;
+      font-size: 12px;
+      width: 200px; }
+      p.radioWithQuestionWrapper .visibleLabel + .questionIcon + .helpText.second {
+        left: 125px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body .step-content .amount {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 0; }
+
+.creditResultTitle {
+  font-weight: 700; }
+
+#approvedCredit {
+  margin-top: 20px; }
+  #approvedCredit .step-content .creditResSubtitle {
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  #approvedCredit .step-content .paymentData {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px; }
+  #approvedCredit .step-content .simulationAgain {
+    font-size: 14px;
+    cursor: pointer;
+    color: #1b1b1b;
+    margin-top: 32px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+
+.moneySimulatorResultSmallText {
+  display: block;
+  margin-top: 24px;
+  color: #1b1b1b;
+  font-size: 11px;
+  max-width: 311px; }
+  .moneySimulatorResultSmallText div.catDiv {
+    display: inline; }
+    .moneySimulatorResultSmallText div.catDiv .catSpan {
+      font-weight: 300;
+      font-size: 16px; }
+
+@media (min-width: 1024px) {
+  body .step-content .amount {
+    font-size: 25px; }
+  .creditResultTitle {
+    font-size: 25px !important; }
+  .creditResSubtitle {
+    font-size: 16px; }
+  #approvedCredit .step-content .paymentData {
+    font-size: 17px; }
+  .moneySimulatorResultSmallText {
+    font-size: 12.5px; }
+    .moneySimulatorResultSmallText div.catDiv .catSpan {
+      font-size: 17px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+#u_credit, #u_sells, #u_debtPayment {
+  text-indent: 22px; }
+
+.longFormStep {
+  max-height: 90%; }
+  .longFormStep .step-content {
+    margin: 0 !important; }
+
+.longFormWrapper div {
+  margin-bottom: 20px; }
+
+.checkboxLongFormDiv p label {
+  font-size: 11px;
+  line-height: 16px; }
+
+.input-field input.longFormInput {
+  font-size: 16px;
+  height: 22px; }
+  .input-field input.longFormInput + label.invalid {
+    top: 28px !important;
+    left: 0; }
+
+.giroSelectWrapper {
+  height: 43px; }
+  .giroSelectWrapper .arrow {
+    display: block;
+    position: absolute;
+    right: 7px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/imgs/downArrow.png);
+    background-size: cover;
+    background-color: white;
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    -moz-opacity: 70; }
+  .giroSelectWrapper .giroSelect {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #D7D8D6;
+    border-radius: 0;
+    display: block;
+    height: 25px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    padding-left: 0;
+    padding-bottom: 0;
+    position: relative;
+    top: -8px; }
+    .giroSelectWrapper .giroSelect:focus {
+      outline: none !important; }
+
+.formSubmitBtn {
+  margin-bottom: 30px;
+  border: 1px solid #929292 !important;
+  color: #929292; }
+  .formSubmitBtn.validAll {
+    border: 1px solid #1b1b1b !important;
+    color: #1b1b1b; }
+
+.longFormAction {
+  -webkit-box-pack: end !important;
+  -webkit-justify-content: flex-end !important;
+     -moz-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  padding-right: 11px; }
+
+.privacyPolicyWrapper {
+  display: none;
+  z-index: 1; }
+  .privacyPolicyWrapper .privacyPolicy {
+    background-color: white; }
+    .privacyPolicyWrapper .privacyPolicy .closePP {
+      position: absolute;
+      right: 20px;
+      font-size: 20px;
+      top: -5px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px; }
+      .privacyPolicyWrapper .privacyPolicy .closePP img.iconSVGImg {
+        max-height: 40px;
+        margin-right: 0px; }
+    .privacyPolicyWrapper .privacyPolicy .privacyPolicyTitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.3px;
+      color: #1b1b1b; }
+    .privacyPolicyWrapper .privacyPolicy div div p {
+      line-height: 1.43;
+      color: #1b1b1b; }
+
+.privacyPolicyLink {
+  text-decoration: underline;
+  cursor: pointer; }
+
+.checkboxWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .checkboxWrapper .checkBoxCont {
+    width: 22px;
+    height: 22px;
+    margin-right: 17px;
+    position: relative; }
+    .checkboxWrapper .checkBoxCont .checkboxImg {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: white;
+      border: 2px solid #d7d8d6;
+      border-radius: 2px;
+      cursor: pointer; }
+      .checkboxWrapper .checkBoxCont .checkboxImg.checked {
+        display: block;
+        border: none;
+        background-image: url(../assets/imgs/selected.svg); }
+  .checkboxWrapper .checkboxLabel {
+    color: #1b1b1b; }
+
+@media (min-width: 600px) {
+  .formRightPadding {
+    padding-right: 60px !important; }
+  .longFormStep .step-content {
+    margin: 0 0 0 41px !important; }
+  .giroSelectWrapper .arrow {
+    right: 50px; }
+  .longFormAction {
+    padding-right: 60px; } }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Univers Next for HSBC';
+  src: url("../assets/fonts/Univers Next for HSBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body .folio-container {
+  margin: 20px auto; }
+  body .folio-container strong {
+    padding: 0 10px; }
+
+body .step-content .success-actions {
+  padding: 20px 0; }
+  body .step-content .success-actions > div {
+    padding: 0; }
+    body .step-content .success-actions > div a {
+      font-size: 13px;
+      color: #1b1b1b; }
+
+body .step-content ul.ul-disc li {
+  display: list-item;
+  /* This has to be "list-item"                                               */
+  list-style-type: disc;
+  /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside; }
+
+.firstSideLastStep .approachTimeTxt {
+  font-size: 16px;
+  margin: 34px 0 !important; }
+
+.firstSideLastStep .folioWrapper {
+  max-width: 321px;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 1px solid #d7d8d6;
+  border-left: 0;
+  font-size: 14px;
+  position: relative;
+  color: #1b1b1b;
+  margin-bottom: 30px; }
+  .firstSideLastStep .folioWrapper .leftGradient {
+    background-color: #1b1b1b;
+    width: 8px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: -1px; }
+  .firstSideLastStep .folioWrapper .folio .folioCont {
+    font-size: 16px; }
+
+.secondSideLastStep {
+  padding-left: 0 !important; }
+  .secondSideLastStep .requirementsTitle {
+    font-size: 16px;
+    margin: 34px 0 !important; }
+  .secondSideLastStep .ul-disc {
+    margin-bottom: 41px; }
+    .secondSideLastStep .ul-disc > li {
+      margin-bottom: 6px; }
+  .secondSideLastStep .callAction {
+    margin-bottom: 36px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .secondSideLastStep .callAction strong {
+      min-width: 100px;
+      margin-left: 5px; }
+  .secondSideLastStep .backFinalBtn {
+    text-decoration: none;
+    color: #1b1b1b; }
+
+.lastStep .step-content {
+  margin: 0 0 220px 0 !important; }
+
+.lastStep .otherServiceConectorDiv {
+  position: fixed;
+  display: none;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 3;
+  background-color: white;
+  -webkit-box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 76px;
+  padding: 18px 0 0 21px; }
+  .lastStep .otherServiceConectorDiv .fullWrapper {
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/imgs/lastBack.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40%;
+    padding-bottom: 34px; }
+    .lastStep .otherServiceConectorDiv .fullWrapper .oneSideWrapper {
+      text-align: left;
+      width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content; }
+      .lastStep .otherServiceConectorDiv .fullWrapper .oneSideWrapper .otherServiceConnectorBtn {
+        border: 1px solid #333;
+        line-height: 1;
+        border-radius: 0;
+        margin-top: 10px;
+        text-transform: none;
+        font-size: 11px;
+        padding: 2px;
+        width: 106px; }
+
+.lastStep.active .otherServiceConectorDiv {
+  display: block; }
+  .lastStep.active .otherServiceConectorDiv .fullWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+.printBtn, .shareLink, .backFinalBtn {
+  text-decoration: underline; }
+
+@media (min-width: 600px) {
+  .firstSideLastStep {
+    padding-right: 71px !important;
+    border-right: 1px solid #d7d8d6; }
+  .secondSideLastStep {
+    padding-left: 80px !important; }
+  .lastStep .step-content {
+    margin: 0px 24px 140px 41px !important; }
+  .lastStep .otherServiceConectorDiv {
+    left: 0;
+    margin-top: 46px;
+    min-height: 80px;
+    padding: 10px 0 0 41px; }
+    .lastStep .otherServiceConectorDiv .fullWrapper {
+      margin: 0 auto;
+      max-width: 1024px;
+      padding-bottom: 28px;
+      background-position-x: 90%;
+      background-size: 23%; }
+      .lastStep .otherServiceConectorDiv .fullWrapper .oneSideWrapper {
+        width: 50%;
+        padding-right: 12px; }
+        .lastStep .otherServiceConectorDiv .fullWrapper .oneSideWrapper .otherServiceConnectorBtn {
+          margin-top: 37px;
+          margin-left: 9px;
+          padding: 5px;
+          width: 152px;
+          font-size: 14px;
+          background-color: white; } }
+
+.shareLink {
+  cursor: pointer; }
+
+.shareOnNet {
+  display: none;
+  margin: 0 3px;
+  text-decoration: underline;
+  color: #1b1b1b;
+  cursor: pointer;
+  font-size: 10.5px; }
+
+@media (min-width: 1024px) {
+  body .step-content ul.ul-disc li {
+    font-size: 16px; }
+  .firstSideLastStep .approachTimeTxt, .secondSideLastStep .requirementsTitle {
+    font-size: 18px; }
+  .firstSideLastStep .folioWrapper + .success-actions + small {
+    font-size: 13px; } }

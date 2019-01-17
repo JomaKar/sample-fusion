@@ -1,0 +1,146 @@
+form{
+	min-height: calc(100vh - 100px) !important;
+}
+
+form ul.stepper{
+	margin-top: calc(50vh - 220px) !important;
+	overflow: visible !important;
+}
+
+body .gradient,
+body .gradient p,
+body .gradient.fullGradient,
+body .gradient-bg.fullGradient,
+.fullGradient,
+.radioWithQuestionWrapper{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+label.gradient,
+label.gradient.fullGradient,
+label.fullGradient,
+label.gradient-bg.fullGradient,
+label.gradient-bg,
+label.standardTitle,
+.gradient label,
+.gradient.fullGradient label,
+.gradient-bg.fullGradient label,
+input:focus+label.gradient,
+input:focus+label.gradient.fullGradient,
+input:focus+label.fullGradient,
+input:focus+label.gradient-bg.fullGradient,
+input:focus+label.gradient-bg,
+input:focus+label.standardTitle,
+input:focus+.gradient label,
+input:focus+.gradient.fullGradient label,
+input:focus+.gradient-bg.fullGradient label{
+	filter: none !important;
+	background-image: none !important;
+	color: #DB0011 !important;
+}
+
+.titleTxt,
+p.titleTxt.fullGradient,
+body .gradient p.titleTxt.fullGradient,
+body .gradient.fullGradient.benefitsBtn,
+body .gradient-bg.fullGradient.benefitsBtn,
+.otherServiceConectorDiv .oneSideWrapper p.p16px,
+.lastStep .step-content .row .step-title-h p,
+.longFormStep .step-content .longFormWrapper .step-title-h p{
+	color: #DB0011 !important;
+}
+
+label.visibleLabel{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+.withArrBtn + .step-actions{
+	right: 0px !important;
+}
+
+.iconsRow .iconCont .iconImg{
+	height: 56px;
+}
+
+.iconsRow .iconCont .iconText{
+	max-width: 100px;
+	font-size: .85rem;
+}
+
+@media(min-width: 600px){
+	.iconsRow .iconCont .iconText{
+		max-width: 120px;
+	}
+}
+
+
+body .step .welcomeContent{
+	margin-left: calc(50% - 168.5px);
+}
+
+
+.giroSelectWrapper .arrow{
+	filter: none;
+	opacity: 1;
+	top: -8px;
+	height: 30px;
+	width: 30px;
+}
+
+input::-ms-clear {
+    display: none !important;
+}
+
+.stepper.withBlock{
+	display: block !important;
+	margin-top: 0 !important;
+}
+
+
+.secondSideLastStep .callAction{
+	display: block;
+}
+
+#memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.dbl, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.dbl{
+	min-width: 62px;
+}
+
+#memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black{
+	min-width: 103px;
+}
+
+#approvedCredit{
+	margin-top: 0px !important;
+}
+
+.longFormStep.active, .lastStep.active{
+	margin-top: 0px !important;
+}
+
+.membershipsStep.active{
+	margin-top: 40px !important;	
+}
+
+@media(min-width: 600px){
+	.longFormStep.active, .lastStep.active{
+		margin-top: 37px !important;
+	}
+}
+
+
+@media(min-width: 1024px){
+	body .stepper{
+		min-width: 1000px;
+		margin-left: calc(50vw - 500px);
+	}
+}
+
+@media(min-height: 800px){
+	#approvedCredit.active{
+		margin-top: -40px !important;
+	}
+}

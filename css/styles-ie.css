@@ -1,0 +1,199 @@
+.splash img{
+	margin-top: calc(50vh - 33.5px);
+	margin-left: calc(50vw - 100px);
+}
+body .gradient,
+body .gradient p,
+body .gradient.fullGradient,
+body .gradient-bg.fullGradient,
+.fullGradient,
+.radioWithQuestionWrapper{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+label.gradient,
+label.gradient.fullGradient,
+label.fullGradient,
+label.gradient-bg.fullGradient,
+label.gradient-bg,
+label.standardTitle,
+.gradient label,
+.gradient.fullGradient label,
+.gradient-bg.fullGradient label,
+input:focus+label.gradient,
+input:focus+label.gradient.fullGradient,
+input:focus+label.fullGradient,
+input:focus+label.gradient-bg.fullGradient,
+input:focus+label.gradient-bg,
+input:focus+label.standardTitle,
+input:focus+.gradient label,
+input:focus+.gradient.fullGradient label,
+input:focus+.gradient-bg.fullGradient label{
+	filter: none !important;
+	background-image: none !important;
+	color: #DB0011 !important;
+}
+
+.titleTxt,
+p.titleTxt.fullGradient,
+body .gradient p.titleTxt.fullGradient,
+body .gradient.fullGradient.benefitsBtn,
+body .gradient-bg.fullGradient.benefitsBtn,
+.otherServiceConectorDiv .oneSideWrapper p.p16px,
+.lastStep .step-content .row .step-title-h p,
+.longFormStep .step-content .longFormWrapper .step-title-h p{
+	color: #DB0011 !important;
+}
+
+label.visibleLabel{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+input:focus+label{
+	color: #1b1b1b !important;
+}
+
+#start.one-field-step, #creditAsk{
+	margin-top: 150px;
+}
+
+#shortIntro, #greeting{
+	margin-top: calc(150px - 21px);
+}
+
+
+@media(min-width: 1024px){
+	#start.one-field-step, #creditAsk{
+		margin-top: 200px;
+	}
+
+	#shortIntro, #greeting{
+		margin-top: calc(200px - 21px);
+	}
+
+	.step.radioInput{
+		position: relative;
+		top: -30px !important;
+	}
+}
+
+
+span.benefitsBtn{
+	margin-left: 42%;
+}
+
+button.benefitsBtn{
+	margin-left: 32%;
+}
+
+body .step .welcomeContent{
+	margin-top: 40px;
+	margin-left: calc(50% - 168.5px);
+}
+
+.progressBar.active{
+	display: block;
+}
+
+.progressBar .barStep{
+	background-color: gray;
+	display: block;
+	float: left;
+}
+
+.progressBar.active .barStep.done{
+	opacity: 0;
+}
+
+#approvedCredit{
+	margin-top: 0 !important;
+}
+
+.input-field label.shortLabel{
+	top: -30px !important;
+}
+
+.giroSelectWrapper .arrow{
+	filter: none;
+	opacity: 1;
+	top: -8px;
+	height: 30px;
+	width: 30px;
+}
+
+.folioWrapper .folio{
+	display: block;
+	margin-top: 17px;
+}
+
+#approvedCredit{
+	top: -100px;
+}
+
+.lastStep, .longFormStep{
+	top: -190px;
+}
+
+.membershipsStep{
+	top: -180px;
+}
+
+.checkboxWrapper .checkBoxCont{
+	float: left;
+}
+
+.membershipLabel{
+	float: left;
+}
+
+.questionIconMem{
+	overflow: visible;
+}
+
+.questionIconMem img.iconSVGImg{
+	width: 14px;
+}
+
+.otherServiceConectorDiv .fullWrapper .oneSideWrapper{
+	float: left;
+}
+
+.acceptMemBtn{
+	width: 100%;
+}
+
+.iconsRow .iconCont{
+	height: 130px;
+}
+
+
+.iconsRow .iconCont .iconImg{
+	max-height: unset;
+	height: 56px;
+}
+
+.iconsRow .iconCont .iconText{
+	font-size: 13px;
+}
+
+#memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.dbl, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black.dbl{
+	min-width: 62px;
+}
+
+#memberships.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black, #membershipsAfter.active .membershipRow .membershipWrapper .membershipBox .membershipOfferResume .membershipLabel.black{
+	min-width: 103px;
+}
+
+.disclaimer{
+	width: 100%;
+	height: 18px;
+	float: right;
+}
+
+.secondSideLastStep .callAction{
+	display: block;
+}

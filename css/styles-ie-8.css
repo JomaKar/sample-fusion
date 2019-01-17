@@ -1,0 +1,149 @@
+.splash{
+	width: 100%;
+	height: 100%;
+}
+
+
+.splash img{
+	margin-top: calc(50% - 33.5px);
+	margin-left: calc(50% - 100px);
+}
+
+body .gradient,
+body .gradient p,
+body .gradient.fullGradient,
+body .gradient-bg.fullGradient,
+.fullGradient,
+.radioWithQuestionWrapper{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+label.gradient,
+label.gradient.fullGradient,
+label.fullGradient,
+label.gradient-bg.fullGradient,
+label.gradient-bg,
+label.standardTitle,
+.gradient label,
+.gradient.fullGradient label,
+.gradient-bg.fullGradient label,
+input:focus+label.gradient,
+input:focus+label.gradient.fullGradient,
+input:focus+label.fullGradient,
+input:focus+label.gradient-bg.fullGradient,
+input:focus+label.gradient-bg,
+input:focus+label.standardTitle,
+input:focus+.gradient label,
+input:focus+.gradient.fullGradient label,
+input:focus+.gradient-bg.fullGradient label{
+	filter: none !important;
+	background-image: none !important;
+	color: #DB0011 !important;
+}
+
+.titleTxt,
+p.titleTxt.fullGradient,
+body .gradient p.titleTxt.fullGradient,
+body .gradient.fullGradient.benefitsBtn,
+body .gradient-bg.fullGradient.benefitsBtn,
+.otherServiceConectorDiv .oneSideWrapper p.p16px,
+.lastStep .step-content .row .step-title-h p,
+.longFormStep .step-content .longFormWrapper .step-title-h p{
+	color: #DB0011 !important;
+}
+
+label.visibleLabel{
+	filter: none !important;
+	background-image: none !important;
+	color: #1b1b1b !important;
+}
+
+input:focus+label{
+	color: #1b1b1b !important;
+}
+
+#start.one-field-step, #creditAsk{
+	margin-top: 150px;
+}
+
+#shortIntro, #greeting{
+	margin-top: calc(150px - 21px);
+}
+
+span.benefitsBtn{
+	margin-left: 42%;
+}
+
+button.benefitsBtn{
+	margin-left: 32%;
+}
+
+body .step .welcomeContent{
+	margin-top: 40px;
+	margin-left: calc(50% - 168.5px);
+}
+
+.progressBar.active{
+	display: block;
+}
+
+.progressBar .barStep{
+	background-color: gray;
+	display: block;
+	float: left;
+}
+
+.progressBar.active .barStep.done{
+	opacity: 0;
+}
+
+#approvedCredit{
+	margin-top: 0 !important;
+}
+
+.input-field label.shortLabel{
+	top: -30px !important;
+}
+
+.giroSelectWrapper .arrow{
+	filter: none;
+	opacity: 1;
+	top: -8px;
+	height: 30px;
+	width: 30px;
+}
+
+.folioWrapper .folio{
+	display: block;
+	margin-top: 25px;
+}
+
+#approvedCredit, .membershipsStep, .lastStep, .longFormStep{
+	top: -100px;
+}
+
+.checkboxWrapper .checkBoxCont{
+	float: left;
+}
+
+.membershipLabel{
+	float: left;
+}
+
+.questionIconMem{
+	overflow: visible;
+}
+
+.questionIconMem img.iconSVGImg{
+	width: 14px;
+}
+
+.otherServiceConectorDiv .fullWrapper .oneSideWrapper{
+	float: left;
+}
+
+.acceptMemBtn{
+	width: 100%;
+}

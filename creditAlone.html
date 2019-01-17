@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+      <meta property="og:url"                content="https://personal.hsbc.com.mx/fusion/" />
+      <meta property="og:type"               content="website" />
+      <meta property="og:title"              content="HSBC Fusion, mi negocio y finanzas personales en un mismo lugar" />
+      <meta property="og:description"        content="Yo administro mis finanzas personales y las de mi negocio en un mismo lugar con #HSBCFusion. Tú también empieza a ahorrar tiempo y dinero, visita  www.hsbc.com.mx/fusion" />
+      <meta property="og:image"              content="http://localhost:3000/assets/imgs/shareImg.png" />
+
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>HSBC Online</title>
+      <meta name="description" content="Plataforma online de HSBC para tus necesidades">
+
+      <link rel="stylesheet" class="conditional">
+
+      <!-- Materializecss compiled and minified CSS -->
+      <link rel="stylesheet" href="css/materialize.min.css">
+      <!--Import Materialize-Stepper CSS (after importing materialize.css) -->
+      <link rel="stylesheet" href="css/materialize-stepper.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+
+      <link rel="icon" type="image/png" href="assets/imgs/rojo.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+      <!--[if gt IE 8 ]>
+      <link rel="stylesheet" href="css/styles-ie.css">      
+      <![endif]-->
+
+      <!--[if lt IE 9 ]>
+      <link rel="stylesheet" href="css/styles-ie-8.css">      
+      <![endif]-->
+   </head>
+
+   <body >
+
+      <header class="appGradientHeader">
+      </header>
+
+      <img class="brandIcon" src="assets/imgs/logoSmall.png">
+
+      <span class="floatingText">Simulador de Cr&eacute;dito</span>
+
+
+      <form id="creditForm" class="creditAlone">
+
+         <ul class="stepper linear">
+
+            <!-- preference name input -->
+            <li id="start" class="step noInputItm active" data-step-name="start">
+               <div class="step-content welcomeContent">
+                  <div class="step-header">
+                     <p class="titleTxt bigFont"><span>HSBC Fusion</span></p>
+                  </div>
+                  <div class="gradient">
+                     <p class="fullGradient forceDouble customTxt mt16">El nuevo servicio financiero para tu negocio y tu vida personal.</p>
+                  </div>
+                  <div class="step-actions">
+                     <button tms-tab="" class="lonelyBtn waves-effect waves-dark btn-flat add-border tonone next-step">Simula tu cr&eacute;dito</button>
+                  </div>
+               </div>
+            </li>
+            
+            <!-- how much credit input -->
+            <li id="creditAsk" data-step-bar="1" class="step small-step onProgressBar one-field-step withInput" data-step-name="creditAsk">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="input-field col s12 gradient withArrBtn">
+                        <span class="dollaIcon">$</span>
+                        <input id="u_credit" name="u_credit" type="number" class="validate trickyInput" required>
+                        <label for="u_credit" class="doubleLine fullGradient standardTitle">
+                           ¿Cu&aacute;nto cr&eacute;dito necesitas?
+                           <br>
+                           <span class="lightSpan fullGradient">
+                              (en pesos)
+                           </span>
+                        </label>
+                     </div>
+                     <div class="step-actions">
+                        <button tms-tab="" id="creditNumberBtn" class="waves-effect waves-dark btn-flat next-step">
+                           <img src="assets/imgs/arrow-right.svg" class="arrow-right">
+                        </button>
+                     </div>
+                  </div>
+                  
+               </div>
+            </li>
+
+            <!-- credity use type -->
+            <li id="creditUse" data-step-bar="2" class="step small-step withInput radioInput onProgressBar" data-step-name="creditUse">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿En qu&eacute; usar&aacute;s tu cr&eacute;dito?</span></p>
+
+                     <p>
+                        <input class="with-gap creditUse" required name="creditUse" type="radio" id="fOptionCreditUse" value="1" />
+                        <label class="visibleLabel" for="fOptionCreditUse" tms-tab="">Activo fijo</label>
+                      </p>
+                      <p>
+                        <input class="with-gap creditUse" required name="creditUse" type="radio" id="sOptionCreditUse" value="2" />
+                        <label class="visibleLabel" for="sOptionCreditUse" tms-tab="">Capital de trabajo</label>
+                      </p>
+
+                  </div>
+               </div>
+            </li>
+            
+            <!-- credit type selection -->
+            <li id="creditType" data-step-bar="3" class="step small-step withInput radioInput onProgressBar" data-step-name="creditType">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿Qu&eacute; cr&eacute;dito prefieres?</span></p>
+
+                     <p class="radioWithQuestionWrapper">
+                        <input class="with-gap revCredType" required name="creditType" type="radio" id="revCredType" value="1" />
+                        <label class="visibleLabel" for="revCredType" tms-tab="">
+                           Revolvente 
+                        </label>
+                        <span class="questionIcon">
+                           <img src="assets/imgs/info.svg" class="iconSVGImg">
+                        </span> 
+                        <span class="helpText">Reutiliza tu cr&eacute;dito disponible sin un plazo fijo</span>
+                      </p>
+                      <p class="radioWithQuestionWrapper">
+                        <input class="with-gap simpleCredType" required name="creditType" type="radio" id="simpleCredType" value="2" />
+                        <label class="visibleLabel" for="simpleCredType" tms-tab="">
+                           Simple 
+                        </label>
+                        <span class="questionIcon">
+                           <img src="assets/imgs/info.svg" class="iconSVGImg">
+                        </span>
+                        <span class="helpText second">Paga a plazos fijos</span>
+                      </p>
+                  </div>
+               </div>
+            </li>
+            
+            <!-- simple credit payment months selection -->
+            <li id="monthsToPay" data-step-bar="4" class="step small-step withInput radioInput onProgressBar" data-step-name="monthsToPay">
+               <div class="step-content">
+                  <div class="gradient desiredPaymentWrapper">
+                     <p class="titleTxt fullGradient standardTitle"><span>¿En cu&aacute;nto tiempo deseas pagarlo?</span></p>
+
+                     <p>
+                        <input class="with-gap desiredPaymentInput" name="paymentPeriod" type="radio" id="fOptionMonths" value="1" />
+                        <label class="visibleLabel" for="fOptionMonths" tms-tab="">36 Meses</label>
+                      </p>
+                      <p>
+                        <input class="with-gap desiredPaymentInput" name="paymentPeriod" type="radio" id="sOptionMonths" value="2" />
+                        <label class="visibleLabel" for="sOptionMonths" tms-tab="">48 Meses</label>
+                      </p>
+
+                      <p>
+                        <input class="with-gap desiredPaymentInput" name="paymentPeriod" type="radio" id="tOptionMonths" value="3" />
+                        <label class="visibleLabel" for="tOptionMonths" tms-tab="">60 Meses</label>
+                      </p>
+
+                  </div>
+               </div>
+            </li>
+
+            
+            <!-- debt monthly payment input -->
+            <li id="debtPayment" data-step-bar="5" class="step small-step one-field-step withInput onProgressBar" data-step-name="debtPayment">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="input-field col s12 gradient withArrBtn">
+                        <span class="dollaIcon">$</span>
+                        <input id="u_debtPayment" name="u_debtPayment" type="number" class="validate trickyInput" required>
+                        <label for="u_debtPayment" class="tripleLine fullGradient standardTitle">
+                           ¿Cu&aacute;l es tu pago mensual de obligaciones crediticias?
+                           <span class="lightSpan fullGradient">
+                              (en pesos)
+                           </span>
+                        </label>
+                     </div>
+                     <div class="step-actions">
+                        <button tms-tab="" id="debtPayNumberBtn" class="waves-effect waves-dark btn-flat next-step">
+                           <img src="assets/imgs/arrow-right.svg" class="arrow-right">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </li>
+
+            
+            <!-- calculation delay view -->
+            <li id="calculationTime" data-step-bar="6" data-ready="no" class="step small-step calculationDelayView noInputItm automaticStep" data-step-name="calculationTime">
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient standardTitle"><span>Estamos calculando...</span></p>
+                  </div>
+                  <p>danos un momento para obtener la simulaci&oacute;n de tu cr&eacute;dito.</p>
+               </div>
+            </li>
+
+            
+            <!-- showed "approved" credit -->
+            <li id="approvedCredit" data-step-bar="noMore" class="step small-step noInputItm" data-step-name="approvedCredit" >
+               <div class="step-content">
+                  <div class="gradient">
+                     <p class="titleTxt fullGradient creditResultTitle"><strong>¡Buenas noticias, <span class="userName tocapitalize"></span></strong>!</p>
+                  </div>
+                  <p class="creditResSubtitle">El monto de tu cr&eacute;dito puede ser hasta de:</p>
+                  <p class="amount" data-amount=""></p>
+                  <p class="paymentData"></p>
+                  <div class="step-actions">
+                     <button tms-tab="" id="creditApprovedNextStepBtn" class="waves-effect lonelyBtn waves-dark btn-flat next-step add-border tonone">Continuar</button>
+                  </div>
+                  <p class="simulationAgain" tms-tab=""> Simular otro cr&eacute;dito <img src="assets/imgs/chevron-right.svg" class="iconSVGImg"> </p>
+                  <small class="moneySimulatorResultSmallText">
+                     Sujeto a aprobaci&oacute;n de cr&eacute;dito. El simulador de cr&eacute;dito realiza un c&aacute;lculo aproximado del monto que puedes obtener.
+                     <br>
+                     <br>
+                     <div class="catDiv">CAT <span class="creditTypeCat">Cr&eacute;dito Simple HSBC Fusion</span> <span class="catSpan">19%</span>, sin IVA. Informativo.
+                     <br>
+                     <br>
+                     Vigencia al 8 de julio de 2018. Fecha de c&aacute;lculo 8 de enero de 2018.
+                     <br>
+                     <br>
+                     Consulta requisitos, t&eacute;rminos, condiciones de contrataci&oacute;n y comisiones en <a href="http://www.hsbc.com.mx/fusion" target="_blank" class="termsLink">www.hsbc.com.mx/fusion</a>
+                     </div>
+                  </small>
+               </div>
+            </li>
+            
+            <!-- folio number and end view -->
+            <li id="end" class="step lastStep" data-step-name="end">
+               <div class="step-content">
+                  <div class="row">
+                     <div class="step-title-h gradient">
+                        <p class="fullGradient">¡Todo listo, <strong><span class="userName tocapitalize"></span></strong>!</p>
+                     </div>
+
+                     <div class="col s12 m6 noPL firstSideLastStep">
+                        <p class="approachTimeTxt">En menos de <strong>24 horas</strong> te llamaremos para dar seguimiento a tus dos solicitudes con un solo folio:</p>
+
+                        <div class="folioWrapper">
+                           <div class="leftGradient"></div>
+                           <span class="folio">
+                              <strong class="folioCont">016 788 129 342</strong>
+                           </span>
+                        </div>
+
+                        <div class="col s12 success-actions">
+                           <div class="col s12 m6">
+                              <a href="" class="align-to-icon printBtn" tms-tab="">
+                                 <img src="assets/imgs/print.svg" class="iconSVGImg printIcon">
+                              Imprime tu folio</a>
+                           </div>
+                           <div class="col s12 m6 withFlex">
+                              <img src="assets/imgs/share.svg" class="iconSVGImg shareIcon">
+                              <a class="align-to-icon shareLink" tms-tab="">
+                                 Comparte en tus redes
+                              </a>
+                              <span class="shareOnNet-AFTER" style="display: none" data-social="L" tms-tab="">
+                                 <!-- <script type="in/Login"></script> -->
+                                 LinkedIn
+                              </span>
+                              <span class="shareOnNet" data-social="F" tms-tab="">
+                                 Facebook
+                              </span>
+                              <span class="shareOnNet" data-social="T" tms-tab="">
+                                 Twitter
+                              </span>
+                           </div>
+                        </div>
+
+                        <small>
+                           En breve recibirás un mail. Consulta requisitos, t&eacute;rminos, condiciones de contrataci&oacute;n y comisiones en: <a href="http://www.hsbc.com.mx/fusion" class="termsLink" target="_blank">http://www.hsbc.com.mx/fusion</a>
+                        </small>
+                     </div>
+
+                     <div class="col s12 m6 secondSideLastStep">
+                        <p class="requirementsTitle">Recuerda tener como m&iacute;nimo:</p>
+
+                        <ul class="ul-disc">
+                           <li>Identificaci&oacute;n oficial vigente de los accionistas y representante legal.</li>
+                           <li>Acta constitutiva.</li>
+                           <li>C&eacute;dula de Identificaci&oacute;n Fiscal.</li>
+                           <li>Comprobante de domicilio vigente de la empresa y de los accionistas.</li>
+                        </ul>
+
+                        <p class="callAction align-to-icon">
+                           <img src="assets/imgs/call.svg" class="iconSVGImg phoneIcon">
+                           Si tienes dudas ll&aacute;manos al 
+                           <strong>(55) 5234-9889</strong>
+                           <strong>Centro de Atenci&oacute;n HSBC Fusion</strong>
+                        </p>
+
+                        <a href="http://www.hsbc.com.mx/fusion" class="backFinalBtn termsLink align-to-icon" tms-tab="">
+                           <img src="assets/imgs/arrow-left.svg" class="iconSVGImg">
+                        Regresa a HSBC Fusion</a>
+                     </div>
+
+                  </div>
+               </div>
+            </li>
+
+         </ul>
+
+      </form>
+
+
+      <div class="mistakeDiv container">
+         <div class="shadowDiv"></div>
+         <div class="row">
+            <div class="messageCont col s10 offset-s1 m6 offset-m3">
+               <span class="closeSpan">
+                  <img src="assets/imgs/close.svg" class="iconSVGImg">
+               </span>
+               <p class="errMsg">Lo sentimos, por el momento no podemos procesar tu solicitud. Inténtalo más tarde.</p>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="rightBottmImgsContainer"></div>
+
+
+      <div class="progressBar">
+         <div class="barStep" data-step="1"></div>
+         <div class="barStep" data-step="2"></div>
+         <span class="backBtn">
+            <img src="assets/imgs/arrow-left.svg" class="iconSVGImg small" tms-tab="">
+            Atr&aacute;s
+         </span>
+         <div class="barStep" data-step="3"></div>
+         <div class="barStep" data-step="4"></div>
+         <div class="barStep" data-step="5"></div>
+         <div class="barStep" data-step="6"></div>
+      </div>
+
+      <!--[if lt IE 9 ]>   
+      <script src="js/es5-shim.js"></script>
+      <![endif]-->
+         
+      <!-- jQuery -->
+      <script id="jqueryScript" src="js/jquery-3.2.1.min.js"></script>
+
+      <script src="js/ie-only.js"></script>
+      <script src="js/featureDetection.js"></script>
+
+      <!--[if lt IE 9 ]>
+      <script src="js/jquery-1.10.2.min.js"></script>     
+      <![endif]-->
+
+      <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+      <!-- Materializecss compiled and minified JavaScript -->
+      <script src="js/materialize.min.js"></script>
+      <script src="js/appBundle.js"></script>
+   </body>
+</html>
